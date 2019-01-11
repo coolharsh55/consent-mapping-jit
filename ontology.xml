@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://adaptcentre.ie/consent/voc.owl#"
-     xml:base="http://adaptcentre.ie/consent/voc.owl"
-     xmlns:core="http://purl.org/vocab/frbr/core#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+<rdf:RDF xmlns="http://adaptcentre.ie/consent/voc#"
+     xml:base="http://adaptcentre.ie/consent/voc"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://adaptcentre.ie/consent/voc.owl#">
-        <owl:versionIRI rdf:resource="http://adaptcentre.ie/consent/1.0"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://adaptcentre.ie/consent/voc#">
+        <owl:versionIRI rdf:resource="http://adaptcentre.ie/consent/1.0/voc#"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christophe Debruyne</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harshvardhan J. Pandit</dc:creator>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time.</dc:description>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consent Ontology</dc:title>
-        <terms:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time.</terms:abstract>
+        <dc:creator>Christophe Debruyne</dc:creator>
+        <dc:creator>Harshvardhan J. Pandit</dc:creator>
+        <dc:description>An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time.</dc:description>
+        <dc:title>Consent Ontology</dc:title>
+        <terms:abstract>An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time.</terms:abstract>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-08-24</terms:created>
         <terms:license rdf:datatype="https://w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:publisher rdf:resource="http://purl.org/adaptcentre/people/ADAPT"/>
@@ -58,54 +58,54 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#forInclusion -->
+    <!-- http://adaptcentre.ie/consent/voc#forInclusion -->
 
 
-    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc.owl#forInclusion">
+    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc#forInclusion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc.owl#Consent"/>
-        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc.owl#Inclusion"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the inclusion for which consent was (not) given.</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for inclusion</rdfs:comment>
+        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
+        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc#Inclusion"/>
+        <rdfs:comment>Indicates the inclusion for which consent was (not) given.</rdfs:comment>
+        <rdfs:comment>for inclusion</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#givenBy -->
+    <!-- http://adaptcentre.ie/consent/voc#givenBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc.owl#givenBy">
+    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc#givenBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc.owl#Consent"/>
-        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc.owl#Consenting_Party"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates who has given consent.</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">given by</rdfs:comment>
+        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
+        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc#Consenting_Party"/>
+        <rdfs:comment>Indicates who has given consent.</rdfs:comment>
+        <rdfs:comment>given by</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#ofPolicy -->
+    <!-- http://adaptcentre.ie/consent/voc#ofPolicy -->
 
 
-    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc.owl#ofPolicy">
+    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc#ofPolicy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc.owl#Inclusion"/>
-        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc.owl#Policy"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refers to the policy of an inclusion.</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">of policy</rdfs:comment>
+        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Inclusion"/>
+        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc#Policy"/>
+        <rdfs:comment>Refers to the policy of an inclusion.</rdfs:comment>
+        <rdfs:comment>of policy</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#ofPurpose -->
+    <!-- http://adaptcentre.ie/consent/voc#ofPurpose -->
 
 
-    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc.owl#ofPurpose">
+    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc#ofPurpose">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc.owl#Inclusion"/>
-        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc.owl#Purpose"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refers to the purpose of an inclusion.</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">of purpose</rdfs:comment>
+        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Inclusion"/>
+        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc#Purpose"/>
+        <rdfs:comment>Refers to the purpose of an inclusion.</rdfs:comment>
+        <rdfs:comment>of purpose</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -122,38 +122,38 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#isGiven -->
+    <!-- http://adaptcentre.ie/consent/voc#isGiven -->
 
 
-    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc.owl#isGiven">
+    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc#isGiven">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc.owl#Consent"/>
+        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.).</rdfs:comment>
+        <rdfs:comment>Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#registeredOn -->
+    <!-- http://adaptcentre.ie/consent/voc#registeredOn -->
 
 
-    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc.owl#registeredOn">
+    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc#registeredOn">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc.owl#Consent"/>
+        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates when the consent instance was registered.</rdfs:comment>
+        <rdfs:comment>Indicates when the consent instance was registered.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#validUntil -->
+    <!-- http://adaptcentre.ie/consent/voc#validUntil -->
 
 
-    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc.owl#validUntil">
+    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc#validUntil">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc.owl#Consent"/>
+        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates when consent expires.</rdfs:comment>
+        <rdfs:comment>Indicates when consent expires.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -170,21 +170,21 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#Consent -->
+    <!-- http://adaptcentre.ie/consent/voc#Consent -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc.owl#Consent">
+    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Consent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a &quot;yes&quot; or a &quot;no&quot;. We treat the absence of the predicate isGiven as a &quot;no&quot;.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consent</rdfs:label>
+        <rdfs:comment>Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a &quot;yes&quot; or a &quot;no&quot;. We treat the absence of the predicate isGiven as a &quot;no&quot;.</rdfs:comment>
+        <rdfs:label>Consent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#Consenting_Party -->
+    <!-- http://adaptcentre.ie/consent/voc#Consenting_Party -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc.owl#Consenting_Party">
+    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Consenting_Party">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -194,41 +194,41 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consenting Party</rdfs:label>
+        <rdfs:comment>Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization.</rdfs:comment>
+        <rdfs:label>Consenting Party</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#Inclusion -->
+    <!-- http://adaptcentre.ie/consent/voc#Inclusion -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc.owl#Inclusion">
+    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Inclusion">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inclusion represents the relation between a policy and a purpose.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inlclusion</rdfs:label>
+        <rdfs:comment>Inclusion represents the relation between a policy and a purpose.</rdfs:comment>
+        <rdfs:label>Inlclusion</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#Policy -->
+    <!-- http://adaptcentre.ie/consent/voc#Policy -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc.owl#Policy">
+    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Policy">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Policy</rdfs:label>
+        <rdfs:comment>Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data.</rdfs:comment>
+        <rdfs:label>Policy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc.owl#Purpose -->
+    <!-- http://adaptcentre.ie/consent/voc#Purpose -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc.owl#Purpose">
+    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Purpose">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purpose</rdfs:label>
+        <rdfs:comment>Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising.</rdfs:comment>
+        <rdfs:label>Purpose</rdfs:label>
     </owl:Class>
     
 
@@ -259,17 +259,17 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc.owl#Consent"/>
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc.owl#Consenting_Party"/>
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc.owl#Inclusion"/>
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc.owl#Policy"/>
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc.owl#Purpose"/>
+            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Consent"/>
+            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Consenting_Party"/>
+            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Inclusion"/>
+            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Policy"/>
+            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Purpose"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
 
 

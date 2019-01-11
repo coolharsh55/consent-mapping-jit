@@ -1,12 +1,12 @@
 {
-  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://adaptcentre.ie/consent/voc.owl", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "https://w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "http://adaptcentre.ie/consent/voc", "https://w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "Consent Ontology"
     },
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#",
+    "iri" : "http://adaptcentre.ie/consent/voc#",
     "author" : [ "Harshvardhan J. Pandit", "Christophe Debruyne" ],
     "description" : {
       "undefined" : "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time."
@@ -21,12 +21,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Harshvardhan J. Pandit",
+        "value" : "Christophe Debruyne",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Christophe Debruyne",
+        "value" : "Harshvardhan J. Pandit",
         "type" : "label"
       } ],
       "created" : [ {
@@ -69,43 +69,43 @@
     "individualCount" : 0
   },
   "class" : [ {
-    "id" : "7",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
     "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "49",
     "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:unionOf"
   }, {
     "id" : "64",
     "type" : "owl:Class"
   }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
     "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
     "type" : "owl:Class"
   }, {
     "id" : "73",
@@ -114,52 +114,49 @@
     "id" : "76",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "78",
+    "id" : "93",
     "type" : "owl:Class"
   }, {
-    "id" : "94",
+    "id" : "96",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
     "id" : "111",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
-    "type" : "owl:unionOf"
-  }, {
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "92",
+    "id" : "88",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "5",
     "type" : "owl:Thing"
   }, {
-    "id" : "34",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "132",
+    "id" : "133",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "120",
+    "id" : "119",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "47",
+    "id" : "48",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "124",
+    "id" : "123",
     "type" : "owl:Class"
   }, {
     "id" : "40",
@@ -168,46 +165,46 @@
     "id" : "114",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "136",
+    "id" : "137",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "137",
+    "id" : "92",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "138",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "125",
+    "id" : "124",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "83",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
   }, {
     "id" : "87",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "91",
-    "type" : "owl:Class"
-  }, {
-    "id" : "9",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "140",
     "type" : "owl:Class"
   }, {
-    "id" : "112",
+    "id" : "42",
     "type" : "owl:Class"
   }, {
     "id" : "99",
     "type" : "owl:unionOf"
   }, {
-    "id" : "146",
+    "id" : "2",
     "type" : "owl:unionOf"
   }, {
-    "id" : "66",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
     "id" : "100",
@@ -216,7 +213,7 @@
     "id" : "147",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "29",
     "type" : "owl:unionOf"
   }, {
     "id" : "152",
@@ -231,34 +228,37 @@
     "id" : "52",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "50",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "143",
     "type" : "owl:Class"
   }, {
-    "id" : "130",
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
     "type" : "owl:Class"
   }, {
     "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "135",
-    "type" : "owl:Class"
-  }, {
-    "id" : "186",
+    "id" : "184",
     "type" : "owl:Class"
   }, {
     "id" : "58",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "15",
+    "id" : "18",
     "type" : "owl:Thing"
   }, {
-    "id" : "184",
+    "id" : "145",
     "type" : "owl:Thing"
   }, {
     "id" : "75",
@@ -276,34 +276,34 @@
     "id" : "68",
     "type" : "owl:Class"
   }, {
-    "id" : "131",
-    "type" : "owl:Class"
-  }, {
     "id" : "70",
     "type" : "owl:Class"
   }, {
     "id" : "141",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "44",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "132",
     "type" : "owl:Class"
   }, {
-    "id" : "123",
-    "type" : "owl:Class"
-  }, {
-    "id" : "157",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "122",
     "type" : "owl:Class"
   }, {
-    "id" : "126",
+    "id" : "158",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -371,25 +371,12 @@
       "IRI-based" : "InstantaneousEvent",
       "undefined" : "InstantaneousEvent"
     },
-    "subClasses" : [ "8", "9", "10", "11", "12" ],
+    "subClasses" : [ "12", "13", "14", "8", "15" ],
     "comment" : {
       "en" : "An instantaneous event, or event for short, happens in the world and marks a change in the world, in its activities and in its entities. The term 'event' is commonly used in process algebra with a similar meaning. Events represent communications or interactions; they are assumed to be atomic and instantaneous."
     },
     "attributes" : [ "external" ],
-    "id" : "7"
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#Policy",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Policy",
-      "undefined" : "Policy"
-    },
-    "comment" : {
-      "undefined" : "Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data."
-    },
-    "id" : "19",
-    "superClasses" : [ "14" ]
+    "id" : "11"
   }, {
     "iri" : "http://www.w3.org/ns/prov#KeyEntityPair",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -478,7 +465,7 @@
       "undefined" : "Key-Entity Pair"
     },
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "25"
   }, {
     "iri" : "http://www.w3.org/ns/prov#ActivityInfluence",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -533,13 +520,13 @@
       "IRI-based" : "ActivityInfluence",
       "undefined" : "ActivityInfluence"
     },
-    "subClasses" : [ "25", "9", "10" ],
+    "subClasses" : [ "27", "13", "14" ],
     "comment" : {
-      "en" : "It is not recommended that the type ActivityInfluence be asserted without also asserting one of its more specific subclasses."
+      "en" : "ActivityInfluence provides additional descriptions of an Activity's binary influence upon any other kind of resource. Instances of ActivityInfluence use the prov:activity property to cite the influencing Activity."
     },
     "attributes" : [ "external" ],
-    "id" : "23",
-    "superClasses" : [ "24" ]
+    "id" : "26",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Modify",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -568,8 +555,8 @@
       "en" : "Modify"
     },
     "attributes" : [ "external" ],
-    "id" : "33",
-    "superClasses" : [ "34" ]
+    "id" : "35",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Person",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -647,8 +634,8 @@
       "undefined" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "35",
-    "superClasses" : [ "36" ]
+    "id" : "36",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Dictionary",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -736,12 +723,12 @@
       "IRI-based" : "Dictionary",
       "undefined" : "Dictionary"
     },
-    "subClasses" : [ "43" ],
+    "subClasses" : [ "44" ],
     "comment" : {
       "undefined" : "A given dictionary forms a given structure for its members. A different structure (obtained either by insertion or removal of members) constitutes a different dictionary."
     },
     "attributes" : [ "external" ],
-    "id" : "30"
+    "id" : "32"
   }, {
     "iri" : "http://www.w3.org/ns/prov#EmptyCollection",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -796,10 +783,10 @@
       "IRI-based" : "EmptyCollection",
       "en" : "EmptyCollection"
     },
-    "subClasses" : [ "43" ],
+    "subClasses" : [ "44" ],
     "attributes" : [ "external" ],
-    "id" : "48",
-    "superClasses" : [ "49" ]
+    "id" : "49",
+    "superClasses" : [ "50" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Agent",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -876,22 +863,37 @@
       "IRI-based" : "Agent",
       "undefined" : "Agent"
     },
-    "subClasses" : [ "35", "50", "51", "52" ],
+    "subClasses" : [ "36", "51", "52", "53" ],
     "attributes" : [ "external" ],
-    "id" : "36"
+    "id" : "23"
   }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#Inclusion",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
+    "iri" : "http://adaptcentre.ie/consent/voc#Consenting_Party",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Inclusion",
-      "undefined" : "Inlclusion"
+      "IRI-based" : "Consenting_Party",
+      "undefined" : "Consenting Party"
+    },
+    "union" : [ "36", "51" ],
+    "comment" : {
+      "undefined" : "Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization."
+    },
+    "attributes" : [ "union" ],
+    "id" : "53",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#Purpose",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Purpose",
+      "undefined" : "Purpose"
     },
     "comment" : {
-      "undefined" : "Inclusion represents the relation between a policy and a purpose."
+      "undefined" : "Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising."
     },
-    "id" : "53",
-    "superClasses" : [ "14" ]
+    "id" : "64",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Location",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -969,7 +971,7 @@
       "undefined" : "Location"
     },
     "attributes" : [ "external" ],
-    "id" : "28"
+    "id" : "30"
   }, {
     "iri" : "http://www.w3.org/ns/prov#Copyright",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -998,8 +1000,8 @@
       "en" : "Copyright"
     },
     "attributes" : [ "external" ],
-    "id" : "64",
-    "superClasses" : [ "34" ]
+    "id" : "65",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Derivation",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1098,13 +1100,13 @@
       "IRI-based" : "Derivation",
       "undefined" : "Derivation"
     },
-    "subClasses" : [ "67", "31", "68", "69", "70" ],
+    "subClasses" : [ "67", "33", "68", "69", "70" ],
     "comment" : {
-      "en" : "The more specific forms of prov:Derivation (i.e., prov:Revision, prov:Quotation, prov:PrimarySource) should be asserted if they apply."
+      "en" : "An instance of prov:Derivation provides additional descriptions about the binary prov:wasDerivedFrom relation from some derived prov:Entity to another prov:Entity from which it was derived. For example, :chewed_bubble_gum prov:wasDerivedFrom :unwrapped_bubble_gum; prov:qualifiedDerivation [ a prov:Derivation; prov:entity :unwrapped_bubble_gum; :foo :bar ]."
     },
     "attributes" : [ "external" ],
-    "id" : "65",
-    "superClasses" : [ "66" ]
+    "id" : "66",
+    "superClasses" : [ "55" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Bundle",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1175,7 +1177,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "73",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#ServiceDescription",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1312,21 +1314,8 @@
       "en" : "An instance of prov:Start provides additional descriptions about the binary prov:wasStartedBy relation from some started prov:Activity to an prov:Entity that started it. For example, :foot_race prov:wasStartedBy :bang; prov:qualifiedStart [ a prov:Start; prov:entity :bang; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ] ."
     },
     "attributes" : [ "external" ],
-    "id" : "12",
-    "superClasses" : [ "66", "7" ]
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#Consent",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Consent",
-      "undefined" : "Consent"
-    },
-    "comment" : {
-      "undefined" : "Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a \"yes\" or a \"no\". We treat the absence of the predicate isGiven as a \"no\"."
-    },
-    "id" : "78",
-    "superClasses" : [ "14" ]
+    "id" : "15",
+    "superClasses" : [ "55", "11" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Accept",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1355,8 +1344,21 @@
       "en" : "Accept"
     },
     "attributes" : [ "external" ],
-    "id" : "94",
-    "superClasses" : [ "34" ]
+    "id" : "93",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#Policy",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Policy",
+      "undefined" : "Policy"
+    },
+    "comment" : {
+      "undefined" : "Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data."
+    },
+    "id" : "96",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Communication",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1459,8 +1461,8 @@
       "en" : "An instance of prov:Communication provides additional descriptions about the binary prov:wasInformedBy relation from an informed prov:Activity to the prov:Activity that informed it. For example, :you_jumping_off_bridge prov:wasInformedBy :everyone_else_jumping_off_bridge; prov:qualifiedCommunication [ a prov:Communication; prov:activity :everyone_else_jumping_off_bridge; :foo :bar ]."
     },
     "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "23" ]
+    "id" : "27",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Attribution",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1564,22 +1566,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "111",
-    "superClasses" : [ "112" ]
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#Consenting_Party",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Consenting_Party",
-      "undefined" : "Consenting Party"
-    },
-    "union" : [ "35", "51" ],
-    "comment" : {
-      "undefined" : "Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization."
-    },
-    "attributes" : [ "union" ],
-    "id" : "50",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Organization",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1658,7 +1645,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "51",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Plan",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1711,7 +1698,7 @@
       "category" : [ {
         "identifier" : "category",
         "language" : "undefined",
-        "value" : "qualified",
+        "value" : "expanded",
         "type" : "label"
       }, {
         "identifier" : "category",
@@ -1726,7 +1713,7 @@
       }, {
         "identifier" : "category",
         "language" : "undefined",
-        "value" : "expanded",
+        "value" : "qualified",
         "type" : "label"
       } ],
       "n" : [ {
@@ -1749,12 +1736,12 @@
       "en" : "There exist no prescriptive requirement on the nature of plans, their representation, the actions or steps they consist of, or their intended goals. Since plans may evolve over time, it may become necessary to track their provenance, so plans themselves are entities. Representing the plan explicitly in the provenance can be useful for various tasks: for example, to validate the execution as represented in the provenance record, to manage expectation failures, or to provide explanations."
     },
     "attributes" : [ "external" ],
-    "id" : "92",
-    "superClasses" : [ "14" ]
+    "id" : "88",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "1",
+    "id" : "5",
     "label" : {
       "undefined" : "Thing"
     }
@@ -1845,9 +1832,9 @@
       "IRI-based" : "Activity",
       "undefined" : "Activity"
     },
-    "subClasses" : [ "122", "94", "123", "64", "124", "125", "126", "33" ],
+    "subClasses" : [ "121", "93", "122", "65", "123", "124", "125", "35" ],
     "attributes" : [ "external" ],
-    "id" : "34"
+    "id" : "9"
   }, {
     "iri" : "http://www.w3.org/ns/prov#Insertion",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1947,8 +1934,8 @@
       "undefined" : "Insertion"
     },
     "attributes" : [ "external" ],
-    "id" : "31",
-    "superClasses" : [ "65" ]
+    "id" : "33",
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Entity",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -2036,20 +2023,20 @@
       "IRI-based" : "Entity",
       "undefined" : "Entity"
     },
-    "subClasses" : [ "53", "78", "73", "49", "92", "19", "131" ],
+    "subClasses" : [ "73", "96", "132", "91", "64", "50", "88" ],
     "attributes" : [ "external" ],
-    "id" : "14"
+    "id" : "17"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "132",
+    "id" : "133",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "120",
+    "id" : "119",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2057,7 +2044,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "47",
+    "id" : "48",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -2086,12 +2073,12 @@
     },
     "label" : {
       "IRI-based" : "Contribute",
-      "en" : "Contribute\n"
+      "en" : "Contribute"
     },
-    "subClasses" : [ "135" ],
+    "subClasses" : [ "136" ],
     "attributes" : [ "external" ],
-    "id" : "124",
-    "superClasses" : [ "34" ]
+    "id" : "123",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -2110,14 +2097,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "136",
+    "id" : "137",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "137",
+    "id" : "92",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -2156,19 +2143,19 @@
       "en" : "Replace"
     },
     "attributes" : [ "external" ],
-    "id" : "125",
-    "superClasses" : [ "34" ]
+    "id" : "124",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "85",
+    "id" : "83",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
+    "id" : "129",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -2259,12 +2246,12 @@
       "IRI-based" : "Influence",
       "undefined" : "Influence"
     },
-    "subClasses" : [ "112", "66", "23" ],
+    "subClasses" : [ "42", "55", "26" ],
     "comment" : {
       "en" : "Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable."
     },
     "attributes" : [ "external" ],
-    "id" : "24"
+    "id" : "1"
   }, {
     "iri" : "http://www.w3.org/ns/prov#Association",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -2356,8 +2343,8 @@
       "en" : "An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedAssociation [ a prov:Association; prov:agent :baker; :foo :bar ]."
     },
     "attributes" : [ "external" ],
-    "id" : "91",
-    "superClasses" : [ "112" ]
+    "id" : "87",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Generation",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -2460,8 +2447,8 @@
       "en" : "An instance of prov:Generation provides additional descriptions about the binary prov:wasGeneratedBy relation from a generated prov:Entity to the prov:Activity that generated it. For example, :cake prov:wasGeneratedBy :baking; prov:qualifiedGeneration [ a prov:Generation; prov:activity :baking; :foo :bar ]."
     },
     "attributes" : [ "external" ],
-    "id" : "9",
-    "superClasses" : [ "7", "23" ]
+    "id" : "13",
+    "superClasses" : [ "11", "26" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Publisher",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -2546,23 +2533,23 @@
       "IRI-based" : "AgentInfluence",
       "undefined" : "AgentInfluence"
     },
-    "subClasses" : [ "111", "91", "72" ],
+    "subClasses" : [ "111", "87", "72" ],
     "comment" : {
-      "en" : "AgentInfluence provides additional descriptions of an Agent's binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent."
+      "en" : "It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses."
     },
     "attributes" : [ "external" ],
-    "id" : "112",
-    "superClasses" : [ "24" ]
+    "id" : "42",
+    "superClasses" : [ "1" ]
   }, {
     "instances" : 0,
-    "union" : [ "34", "14", "36" ],
+    "union" : [ "9", "17", "23" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "99"
   }, {
     "instances" : 0,
-    "union" : [ "34", "14", "36" ],
+    "union" : [ "9", "17", "23" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "146"
+    "id" : "2"
   }, {
     "iri" : "http://www.w3.org/ns/prov#EntityInfluence",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -2617,16 +2604,16 @@
       "IRI-based" : "EntityInfluence",
       "undefined" : "EntityInfluence"
     },
-    "subClasses" : [ "8", "65", "11", "12" ],
+    "subClasses" : [ "12", "66", "8", "15" ],
     "comment" : {
       "en" : "EntityInfluence provides additional descriptions of an Entity's binary influence upon any other kind of resource. Instances of EntityInfluence use the prov:entity property to cite the influencing Entity."
     },
     "attributes" : [ "external" ],
-    "id" : "66",
-    "superClasses" : [ "24" ]
+    "id" : "55",
+    "superClasses" : [ "1" ]
   }, {
     "instances" : 0,
-    "union" : [ "34", "14", "36" ],
+    "union" : [ "9", "17", "23" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "100"
   }, {
@@ -2661,17 +2648,17 @@
     "superClasses" : [ "141" ]
   }, {
     "instances" : 0,
-    "union" : [ "34", "14", "7", "36" ],
+    "union" : [ "9", "17", "11", "23" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "27"
+    "id" : "29"
   }, {
     "instances" : 0,
-    "union" : [ "91", "7" ],
+    "union" : [ "87", "11" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "152"
   }, {
     "instances" : 0,
-    "union" : [ "72", "65", "11", "12" ],
+    "union" : [ "72", "66", "8", "15" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "153"
   }, {
@@ -2745,12 +2732,12 @@
       }, {
         "identifier" : "dm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2012/WD-prov-dm-20120703/prov-dm.html#term-agent",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
         "type" : "label"
       }, {
         "identifier" : "dm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "value" : "http://www.w3.org/TR/2012/WD-prov-dm-20120703/prov-dm.html#term-agent",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -2796,10 +2783,10 @@
       "IRI-based" : "SoftwareAgent",
       "undefined" : "SoftwareAgent"
     },
-    "subClasses" : [ "157", "76" ],
+    "subClasses" : [ "158", "76" ],
     "attributes" : [ "external" ],
     "id" : "52",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Collection",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -2865,10 +2852,10 @@
       "IRI-based" : "Collection",
       "undefined" : "Collection"
     },
-    "subClasses" : [ "48" ],
+    "subClasses" : [ "49" ],
     "attributes" : [ "external" ],
-    "id" : "49",
-    "superClasses" : [ "14" ]
+    "id" : "50",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Invalidation",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -2971,18 +2958,61 @@
       "en" : "An instance of prov:Invalidation provides additional descriptions about the binary prov:wasInvalidatedBy relation from an invalidated prov:Entity to the prov:Activity that invalidated it. For example, :uncracked_egg prov:wasInvalidatedBy :baking; prov:qualifiedInvalidation [ a prov:Invalidation; prov:activity :baking; :foo :bar ]."
     },
     "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "7", "23" ]
+    "id" : "14",
+    "superClasses" : [ "11", "26" ]
   }, {
     "instances" : 0,
-    "union" : [ "31", "69" ],
+    "union" : [ "33", "69" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "143"
   }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#Consent",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
     "instances" : 0,
-    "union" : [ "24", "153" ],
+    "label" : {
+      "IRI-based" : "Consent",
+      "undefined" : "Consent"
+    },
+    "comment" : {
+      "undefined" : "Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a \"yes\" or a \"no\". We treat the absence of the predicate isGiven as a \"no\"."
+    },
+    "id" : "91",
+    "superClasses" : [ "17" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "153" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "130"
+    "id" : "131"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Create",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-dc#",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Activity that identifies the creation of a resource",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Activity that identifies the creation of a resource",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Create",
+      "en" : "Create"
+    },
+    "attributes" : [ "external" ],
+    "id" : "136",
+    "superClasses" : [ "123" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Delegation",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3075,42 +3105,12 @@
     },
     "attributes" : [ "external" ],
     "id" : "72",
-    "superClasses" : [ "112" ]
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#Create",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-dc#",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Activity that identifies the creation of a resource",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Activity that identifies the creation of a resource",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Create",
-      "en" : "Create"
-    },
-    "attributes" : [ "external" ],
-    "id" : "135",
-    "superClasses" : [ "124" ]
+    "superClasses" : [ "42" ]
   }, {
     "instances" : 0,
-    "union" : [ "24", "152" ],
+    "union" : [ "1", "152" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "186"
+    "id" : "184"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "58",
@@ -3121,14 +3121,14 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "15",
+    "id" : "18",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "184",
+    "id" : "145",
     "label" : {
       "undefined" : "Thing"
     }
@@ -3231,7 +3231,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "67",
-    "superClasses" : [ "65" ]
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Creator",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3362,7 +3362,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "69",
-    "superClasses" : [ "65" ]
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#PrimarySource",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3455,20 +3455,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "68",
-    "superClasses" : [ "65" ]
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#Purpose",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Purpose",
-      "undefined" : "Purpose"
-    },
-    "comment" : {
-      "undefined" : "Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising."
-    },
-    "id" : "131",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Revision",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3561,7 +3548,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "70",
-    "superClasses" : [ "65" ]
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Role",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3740,8 +3727,21 @@
       "undefined" : "Empty Dictionary"
     },
     "attributes" : [ "external" ],
-    "id" : "43",
-    "superClasses" : [ "30", "48" ]
+    "id" : "44",
+    "superClasses" : [ "32", "49" ]
+  }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#Inclusion",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Inclusion",
+      "undefined" : "Inlclusion"
+    },
+    "comment" : {
+      "undefined" : "Inclusion represents the relation between a policy and a purpose."
+    },
+    "id" : "132",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#End",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3844,8 +3844,8 @@
       "en" : "An instance of prov:End provides additional descriptions about the binary prov:wasEndedBy relation from some ended prov:Activity to an prov:Entity that ended it. For example, :ball_game prov:wasEndedBy :buzzer; prov:qualifiedEnd [ a prov:End; prov:entity :buzzer; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ]."
     },
     "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "66", "7" ]
+    "id" : "8",
+    "superClasses" : [ "55", "11" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Publish",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3874,8 +3874,8 @@
       "en" : "Publish"
     },
     "attributes" : [ "external" ],
-    "id" : "123",
-    "superClasses" : [ "34" ]
+    "id" : "122",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#DirectQueryService",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3908,7 +3908,7 @@
       "undefined" : "Type for a generic provenance query service. Mainly for use in RDF provenance query service descriptions, to facilitate discovery in linked data environments."
     },
     "attributes" : [ "external" ],
-    "id" : "157",
+    "id" : "158",
     "superClasses" : [ "52" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#RightsAssignment",
@@ -3938,8 +3938,8 @@
       "en" : "RightsAssignment"
     },
     "attributes" : [ "external" ],
-    "id" : "122",
-    "superClasses" : [ "34" ]
+    "id" : "121",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Submit",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -3968,8 +3968,8 @@
       "en" : "Submit"
     },
     "attributes" : [ "external" ],
-    "id" : "126",
-    "superClasses" : [ "34" ]
+    "id" : "125",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Usage",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -4072,35 +4072,35 @@
       "en" : "An instance of prov:Usage provides additional descriptions about the binary prov:used relation from some prov:Activity to an prov:Entity that it used. For example, :keynote prov:used :podium; prov:qualifiedUsage [ a prov:Usage; prov:entity :podium; :foo :bar ]."
     },
     "attributes" : [ "external" ],
-    "id" : "8",
-    "superClasses" : [ "66", "7" ]
+    "id" : "12",
+    "superClasses" : [ "55", "11" ]
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "3",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "4",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "5",
+    "id" : "6",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "13",
+    "id" : "7",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "21",
+    "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "17",
+    "id" : "22",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "26",
+    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
     "type" : "owl:objectProperty"
   }, {
     "id" : "37",
@@ -4112,19 +4112,16 @@
     "id" : "41",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "44",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "45",
     "type" : "owl:objectProperty"
   }, {
     "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "54",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "56",
     "type" : "owl:objectProperty"
   }, {
     "id" : "57",
@@ -4145,43 +4142,40 @@
     "id" : "74",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "77",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "18",
+    "id" : "21",
     "type" : "owl:objectProperty"
   }, {
     "id" : "38",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "84",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "86",
+    "id" : "82",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "60",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "88",
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
     "type" : "owl:objectProperty"
   }, {
     "id" : "89",
     "type" : "owl:objectProperty"
   }, {
     "id" : "90",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "93",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "95",
+    "id" : "94",
     "type" : "owl:objectProperty"
   }, {
     "id" : "97",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "79",
+    "id" : "77",
     "type" : "owl:objectProperty"
   }, {
     "id" : "108",
@@ -4194,6 +4188,9 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
     "type" : "owl:objectProperty"
   }, {
     "id" : "113",
@@ -4209,33 +4206,33 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "118",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "119",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "121",
+    "id" : "120",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "32",
+    "id" : "34",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "128",
+    "id" : "127",
     "type" : "owl:objectProperty"
   }, {
     "id" : "105",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "129",
-    "type" : "owl:objectProperty"
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "133",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "6",
+    "id" : "130",
     "type" : "owl:objectProperty"
   }, {
     "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
     "type" : "owl:objectProperty"
   }, {
     "id" : "98",
@@ -4244,7 +4241,7 @@
     "id" : "139",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "81",
+    "id" : "79",
     "type" : "owl:objectProperty"
   }, {
     "id" : "142",
@@ -4268,22 +4265,25 @@
     "id" : "156",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "158",
-    "type" : "owl:disjointWith"
+    "id" : "157",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "159",
     "type" : "owl:disjointWith"
   }, {
     "id" : "160",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "80",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "161",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "150",
@@ -4292,14 +4292,11 @@
     "id" : "61",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "83",
+    "id" : "81",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "164",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "165",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "166",
     "type" : "rdfs:SubClassOf"
@@ -4313,11 +4310,11 @@
     "id" : "169",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "127",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "170",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "171",
     "type" : "rdfs:SubClassOf"
@@ -4326,19 +4323,19 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "173",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "174",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "175",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "176",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "177",
+    "id" : "176",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "178",
     "type" : "owl:objectProperty"
@@ -4347,37 +4344,43 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "180",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "181",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "182",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "183",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "145",
+    "id" : "146",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "187",
+    "id" : "185",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "188",
+    "id" : "186",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "189",
+    "id" : "187",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "190",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "191",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "192",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "193",
     "type" : "rdfs:SubClassOf"
@@ -4385,26 +4388,23 @@
     "id" : "194",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "82",
+    "id" : "104",
     "type" : "owl:objectProperty"
   }, {
     "id" : "195",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "196",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "104",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "197",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "96",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "198",
     "type" : "owl:objectProperty"
@@ -4413,7 +4413,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "200",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "201",
     "type" : "rdfs:SubClassOf"
@@ -4433,25 +4433,25 @@
     "id" : "206",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "207",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "208",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "16",
     "type" : "owl:objectProperty"
   }, {
     "id" : "209",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "210",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "106",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "211",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
     "type" : "owl:objectProperty"
   }, {
     "id" : "212",
@@ -4460,20 +4460,20 @@
     "id" : "213",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "163",
+    "id" : "214",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "214",
-    "type" : "rdfs:SubClassOf"
+    "id" : "164",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "215",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "216",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "217",
     "type" : "rdfs:SubClassOf"
@@ -4487,14 +4487,14 @@
     "id" : "220",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "102",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "55",
+    "id" : "56",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "221",
-    "type" : "owl:disjointWith"
   }, {
     "id" : "222",
     "type" : "owl:disjointWith"
@@ -4511,38 +4511,38 @@
     "id" : "226",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "185",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "227",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "107",
+    "id" : "183",
     "type" : "owl:objectProperty"
   }, {
     "id" : "228",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "229",
+    "id" : "107",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "230",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "232",
-    "type" : "owl:disjointWith"
+    "id" : "231",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "233",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "234",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "235",
+    "id" : "234",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "235",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "236",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "237",
     "type" : "rdfs:SubClassOf"
@@ -4559,20 +4559,20 @@
     "id" : "241",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "231",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "242",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "243",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "244",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "245",
+    "id" : "232",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "244",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "246",
     "type" : "rdfs:SubClassOf"
@@ -4581,7 +4581,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "248",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "249",
     "type" : "owl:objectProperty"
@@ -4592,7 +4592,7 @@
     "id" : "251",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "2",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
     "id" : "252",
@@ -4615,19 +4615,19 @@
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://www.w3.org/ns/prov#qualifiedInfluenceOf",
-    "inverse" : "2",
+    "inverse" : "3",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "2",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -4636,12 +4636,12 @@
       "undefined" : "qualifiedInfluenceOf"
     },
     "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "0"
   }, {
     "iri" : "http://www.w3.org/ns/prov#describesService",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "5",
     "annotations" : {
       "aq" : [ {
         "identifier" : "aq",
@@ -4672,16 +4672,16 @@
       "IRI-based" : "describesService",
       "undefined" : "describesService"
     },
-    "domain" : "1",
+    "domain" : "5",
     "comment" : {
       "en" : "relates a generic provenance query service resource (type prov:ServiceDescription) to a specific query service description (e.g. a prov:DirectQueryService or a sd:Service)."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "3"
+    "attributes" : [ "object", "external" ],
+    "id" : "4"
   }, {
     "iri" : "http://www.w3.org/ns/prov#has_query_service",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "5",
     "annotations" : {
       "aq" : [ {
         "identifier" : "aq",
@@ -4712,17 +4712,17 @@
       "IRI-based" : "has_query_service",
       "undefined" : "hasProvenanceService"
     },
-    "domain" : "1",
+    "domain" : "5",
     "comment" : {
       "en" : "Indicates a provenance query service that can access provenance related to its subject or anchor resource."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "4"
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedEndOf",
-    "inverse" : "6",
+    "inverse" : "10",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -4740,13 +4740,13 @@
       "IRI-based" : "qualifiedEndOf",
       "undefined" : "qualifiedEndOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "5"
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "7"
   }, {
     "iri" : "http://www.w3.org/ns/prov#specializationOf",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "15",
+    "range" : "18",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -4778,28 +4778,28 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       } ],
       "dm" : [ {
         "identifier" : "dm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-specialization",
+        "value" : "http://www.w3.org/TR/2012/WD-prov-dm-20120703/prov-dm.html#term-specialization",
         "type" : "label"
       }, {
         "identifier" : "dm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2012/WD-prov-dm-20120703/prov-dm.html#term-specialization",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-specialization",
         "type" : "label"
       }, {
         "identifier" : "dm",
@@ -4832,17 +4832,17 @@
       "constraints" : [ {
         "identifier" : "constraints",
         "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
-        "type" : "label"
-      }, {
-        "identifier" : "constraints",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
-        "type" : "label"
-      }, {
-        "identifier" : "constraints",
-        "language" : "undefined",
         "value" : "http://www.w3.org/TR/2012/WD-prov-dm-20120703/prov-constraints.html#prov-dm-constraints-fig",
+        "type" : "label"
+      }, {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "type" : "label"
+      }, {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
         "type" : "label"
       } ],
       "n" : [ {
@@ -4853,12 +4853,12 @@
       }, {
         "identifier" : "n",
         "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2012/WD-prov-dm-20120703/prov-n.html#expression-specialization",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-specialization",
         "type" : "label"
       }, {
         "identifier" : "n",
         "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-specialization",
+        "value" : "http://www.w3.org/TR/2012/WD-prov-dm-20120703/prov-n.html#expression-specialization",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -4877,26 +4877,26 @@
       "IRI-based" : "specializationOf",
       "undefined" : "specializationOf"
     },
-    "superproperty" : [ "16", "17" ],
-    "domain" : "14",
-    "subproperty" : [ "18" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "13"
+    "superproperty" : [ "19", "20" ],
+    "domain" : "17",
+    "subproperty" : [ "21" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "16"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadDelegate",
-    "inverse" : "22",
+    "inverse" : "24",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "23",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -4904,44 +4904,34 @@
       "IRI-based" : "hadDelegate",
       "undefined" : "hadDelegate"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "21"
+    "domain" : "23",
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "1",
+    "range" : "5",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "1",
-    "subproperty" : [ "13" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "17"
+    "domain" : "5",
+    "subproperty" : [ "16" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "20"
   }, {
     "iri" : "http://www.w3.org/ns/prov#atLocation",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "28",
+    "range" : "30",
     "annotations" : {
-      "editorialNote" : [ {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair).",
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "locationOf",
         "type" : "label"
       }, {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes.",
-        "type" : "label"
-      }, {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes.",
-        "type" : "label"
-      }, {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair).",
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "locationOf",
         "type" : "label"
       } ],
       "sharesDefinitionWith" : [ {
@@ -4955,15 +4945,25 @@
         "value" : "http://www.w3.org/ns/prov#Location",
         "type" : "iri"
       } ],
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "locationOf",
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair).",
         "type" : "label"
       }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "locationOf",
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes.",
+        "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair).",
+        "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -4998,17 +4998,17 @@
       "IRI-based" : "atLocation",
       "undefined" : "atLocation"
     },
-    "domain" : "27",
+    "domain" : "29",
     "comment" : {
       "en" : "The Location of any resource.",
       "undefined" : "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "26"
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedInsertion",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "31",
+    "range" : "33",
     "annotations" : {
       "component" : [ {
         "identifier" : "component",
@@ -5092,14 +5092,14 @@
       "IRI-based" : "qualifiedInsertion",
       "undefined" : "qualifiedInsertion"
     },
-    "superproperty" : [ "32" ],
-    "domain" : "30",
-    "attributes" : [ "external", "object" ],
-    "id" : "29"
+    "superproperty" : [ "34" ],
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
   }, {
     "iri" : "http://www.w3.org/ns/prov#derivedByInsertionFrom",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "30",
+    "range" : "32",
     "annotations" : {
       "component" : [ {
         "identifier" : "component",
@@ -5184,8 +5184,8 @@
       "undefined" : "derivedByInsertionFrom"
     },
     "superproperty" : [ "38" ],
-    "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
     "id" : "37"
   }, {
     "iri" : "http://www.w3.org/ns/prov#endedAtTime",
@@ -5239,7 +5239,7 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#atTime",
+        "value" : "http://www.w3.org/ns/prov#End",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -5254,7 +5254,7 @@
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#End",
+        "value" : "http://www.w3.org/ns/prov#atTime",
         "type" : "iri"
       } ]
     },
@@ -5262,27 +5262,27 @@
       "IRI-based" : "endedAtTime",
       "undefined" : "endedAtTime"
     },
-    "domain" : "34",
+    "domain" : "9",
     "comment" : {
       "en" : "The time at which an activity ended. See also prov:startedAtTime."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "39"
   }, {
     "iri" : "http://www.w3.org/ns/prov#agentOfInfluence",
-    "inverse" : "42",
+    "inverse" : "43",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "42",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -5290,13 +5290,13 @@
       "IRI-based" : "agentOfInfluence",
       "undefined" : "agentOfInfluence"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "23",
+    "attributes" : [ "object", "external" ],
     "id" : "41"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedCommunication",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "25",
+    "range" : "27",
     "annotations" : {
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
@@ -5374,28 +5374,28 @@
       "IRI-based" : "qualifiedCommunication",
       "undefined" : "qualifiedCommunication"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "34",
+    "superproperty" : [ "3" ],
+    "domain" : "9",
     "comment" : {
       "en" : "If this Activity prov:wasInformedBy Activity :a, then it can qualify how it was influenced using prov:qualifiedCommunication [ a prov:Communication;  prov:activity :a; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "44"
+    "attributes" : [ "object", "external" ],
+    "id" : "45"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedCommunicationOf",
-    "inverse" : "44",
+    "inverse" : "45",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -5403,13 +5403,13 @@
       "IRI-based" : "qualifiedCommunicationOf",
       "undefined" : "qualifiedCommunicationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "45"
+    "domain" : "27",
+    "attributes" : [ "object", "external" ],
+    "id" : "46"
   }, {
     "iri" : "http://www.w3.org/ns/prov#generatedAtTime",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "47",
+    "range" : "48",
     "annotations" : {
       "editorialNote" : [ {
         "identifier" : "editorialNote",
@@ -5463,12 +5463,12 @@
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#atTime",
+        "value" : "http://www.w3.org/ns/prov#Generation",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Generation",
+        "value" : "http://www.w3.org/ns/prov#atTime",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -5481,17 +5481,17 @@
       "IRI-based" : "generatedAtTime",
       "undefined" : "generatedAtTime"
     },
-    "domain" : "14",
+    "domain" : "17",
     "comment" : {
       "en" : "The time at which an entity was completely created and is available for use."
     },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "46"
+    "attributes" : [ "datatype", "external" ],
+    "id" : "47"
   }, {
     "iri" : "http://www.w3.org/ns/prov#entityOfInfluence",
-    "inverse" : "55",
+    "inverse" : "56",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "55",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -5509,22 +5509,9 @@
       "IRI-based" : "entityOfInfluence",
       "undefined" : "entityOfInfluence"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
     "id" : "54"
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#ofPolicy",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "ofPolicy"
-    },
-    "domain" : "53",
-    "comment" : {
-      "undefined" : "of policy"
-    },
-    "attributes" : [ "functional", "object" ],
-    "id" : "56"
   }, {
     "iri" : "http://www.w3.org/ns/prov#value",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -5537,18 +5524,18 @@
         "type" : "label"
       }, {
         "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "This property serves the same purpose as rdf:value, but has been reintroduced to avoid some of the definitional ambiguity in the RDF specification (specifically, 'may be used in describing structured values').",
-        "type" : "label"
-      }, {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "This property serves the same purpose as rdf:value, but has been reintroduced to avoid some of the definitional ambiguity in the RDF specification (specifically, 'may be used in describing structured values').",
-        "type" : "label"
-      }, {
-        "identifier" : "editorialNote",
         "language" : "undefined",
         "value" : "The editor's definition comes from http://www.w3.org/TR/rdf-primer/#rdfvalue",
+        "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "This property serves the same purpose as rdf:value, but has been reintroduced to avoid some of the definitional ambiguity in the RDF specification (specifically, 'may be used in describing structured values').",
+        "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "This property serves the same purpose as rdf:value, but has been reintroduced to avoid some of the definitional ambiguity in the RDF specification (specifically, 'may be used in describing structured values').",
         "type" : "label"
       } ],
       "component" : [ {
@@ -5611,25 +5598,25 @@
       "IRI-based" : "value",
       "undefined" : "value"
     },
-    "domain" : "14",
-    "attributes" : [ "external", "datatype" ],
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
     "id" : "57"
   }, {
     "iri" : "http://www.w3.org/ns/prov#invalidated",
     "inverse" : "60",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
-      "sharesDefinitionWith" : [ {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Invalidation",
-        "type" : "iri"
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "prov:invalidated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions.",
+        "type" : "label"
       }, {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Invalidation",
-        "type" : "iri"
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "prov:invalidated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions.",
+        "type" : "label"
       } ],
       "inverse" : [ {
         "identifier" : "inverse",
@@ -5642,16 +5629,16 @@
         "value" : "wasInvalidatedBy",
         "type" : "label"
       } ],
-      "editorialNote" : [ {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "prov:invalidated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions.",
-        "type" : "label"
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Invalidation",
+        "type" : "iri"
       }, {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "prov:invalidated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions.",
-        "type" : "label"
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Invalidation",
+        "type" : "iri"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -5667,11 +5654,6 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
@@ -5682,12 +5664,17 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ],
       "category" : [ {
@@ -5707,13 +5694,13 @@
       "undefined" : "invalidated"
     },
     "superproperty" : [ "61" ],
-    "domain" : "34",
-    "attributes" : [ "external", "object" ],
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
     "id" : "59"
   }, {
     "iri" : "http://www.w3.org/ns/prov#pingback",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "5",
     "annotations" : {
       "aq" : [ {
         "identifier" : "aq",
@@ -5738,16 +5725,16 @@
       "IRI-based" : "pingback",
       "undefined" : "provenance pingback"
     },
-    "domain" : "1",
+    "domain" : "5",
     "comment" : {
       "en" : "Relates a resource to a provenance pingback service that may receive additional provenance links about the resource."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "62"
   }, {
     "iri" : "http://www.w3.org/ns/prov#has_anchor",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "5",
     "annotations" : {
       "aq" : [ {
         "identifier" : "aq",
@@ -5778,11 +5765,11 @@
       "IRI-based" : "has_anchor",
       "undefined" : "has_anchor"
     },
-    "domain" : "1",
+    "domain" : "5",
     "comment" : {
       "en" : "Indicates anchor URI for a potentially dynamic resource instance."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "63"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedDelegation",
@@ -5865,12 +5852,12 @@
       "IRI-based" : "qualifiedDelegation",
       "undefined" : "qualifiedDelegation"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "36",
+    "superproperty" : [ "3" ],
+    "domain" : "23",
     "comment" : {
       "en" : "If this Agent prov:actedOnBehalfOf Agent :ag, then it can qualify how with prov:qualifiedResponsibility [ a prov:Responsibility;  prov:agent :ag; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "71"
   }, {
     "iri" : "http://www.w3.org/ns/prov#provenanceUriTemplate",
@@ -5900,29 +5887,16 @@
       "IRI-based" : "provenanceUriTemplate",
       "undefined" : "provenanceUriTemplate"
     },
-    "domain" : "1",
+    "domain" : "5",
     "comment" : {
       "en" : "Relates a provenance service to a URI template string for constructing provenance-URIs."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "74"
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#givenBy",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "range" : "50",
-    "label" : {
-      "IRI-based" : "givenBy"
-    },
-    "domain" : "78",
-    "comment" : {
-      "undefined" : "given by"
-    },
-    "attributes" : [ "functional", "object" ],
-    "id" : "77"
   }, {
     "iri" : "http://www.w3.org/ns/prov#mentionOf",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -5951,17 +5925,17 @@
       "IRI-based" : "mentionOf",
       "undefined" : "mentionOf"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "14",
+    "superproperty" : [ "16" ],
+    "domain" : "17",
     "comment" : {
       "en" : "prov:mentionOf is used to specialize an entity as described in another bundle. It is to be used in conjuction with prov:asInBundle.\n\nprov:asInBundle is used to cite the Bundle in which the generalization was mentioned."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "18"
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasDerivedFrom",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -6031,12 +6005,12 @@
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Derivation",
+        "value" : "http://www.w3.org/ns/prov#qualifiedDerivation",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedDerivation",
+        "value" : "http://www.w3.org/ns/prov#Derivation",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -6049,18 +6023,18 @@
       "IRI-based" : "wasDerivedFrom",
       "undefined" : "wasDerivedFrom"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "14",
-    "subproperty" : [ "80", "81", "82", "37", "83" ],
+    "superproperty" : [ "77" ],
+    "domain" : "17",
+    "subproperty" : [ "78", "79", "80", "37", "81" ],
     "comment" : {
       "en" : "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "38"
   }, {
     "iri" : "http://www.w3.org/ns/prov#atTime",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "85",
+    "range" : "83",
     "annotations" : {
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
@@ -6103,17 +6077,22 @@
       }, {
         "identifier" : "unqualifiedForm",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#invalidatedAtTime",
+        "type" : "iri"
+      }, {
+        "identifier" : "unqualifiedForm",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#endedAtTime",
         "type" : "iri"
       }, {
         "identifier" : "unqualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#generatedAtTime",
+        "value" : "http://www.w3.org/ns/prov#invalidatedAtTime",
         "type" : "iri"
       }, {
         "identifier" : "unqualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#invalidatedAtTime",
+        "value" : "http://www.w3.org/ns/prov#generatedAtTime",
         "type" : "iri"
       }, {
         "identifier" : "unqualifiedForm",
@@ -6124,11 +6103,6 @@
         "identifier" : "unqualifiedForm",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#endedAtTime",
-        "type" : "iri"
-      }, {
-        "identifier" : "unqualifiedForm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#invalidatedAtTime",
         "type" : "iri"
       }, {
         "identifier" : "unqualifiedForm",
@@ -6152,29 +6126,16 @@
       "IRI-based" : "atTime",
       "undefined" : "atTime"
     },
-    "domain" : "7",
+    "domain" : "11",
     "comment" : {
       "en" : "The time at which an InstantaneousEvent occurred, in the form of xsd:dateTime."
     },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "84"
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#validUntil",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "range" : "87",
-    "label" : {
-      "IRI-based" : "validUntil"
-    },
-    "domain" : "78",
-    "comment" : {
-      "undefined" : "Indicates when consent expires."
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "86"
+    "attributes" : [ "datatype", "external" ],
+    "id" : "82"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasInvalidatedBy",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "34",
+    "range" : "9",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -6201,27 +6162,27 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov-o-inverses#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       } ],
       "category" : [ {
@@ -6261,26 +6222,15 @@
       "IRI-based" : "wasInvalidatedBy",
       "undefined" : "wasInvalidatedBy"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "14",
-    "attributes" : [ "external", "object" ],
+    "superproperty" : [ "77" ],
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
     "id" : "60"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedStart",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "12",
+    "range" : "15",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedStartOf",
-        "type" : "label"
-      }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedStartOf",
-        "type" : "label"
-      } ],
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
         "language" : "undefined",
@@ -6291,6 +6241,17 @@
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Start",
         "type" : "iri"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedStartOf",
+        "type" : "label"
+      }, {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedStartOf",
+        "type" : "label"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -6346,13 +6307,13 @@
       "IRI-based" : "qualifiedStart",
       "undefined" : "qualifiedStart"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "34",
+    "superproperty" : [ "3" ],
+    "domain" : "9",
     "comment" : {
       "en" : "If this Activity prov:wasStartedBy Entity :e1, then it can qualify how it was started using prov:qualifiedStart [ a prov:Start;  prov:entity :e1; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "88"
+    "attributes" : [ "object", "external" ],
+    "id" : "84"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedQuotation",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -6434,29 +6395,18 @@
       "IRI-based" : "qualifiedQuotation",
       "undefined" : "qualifiedQuotation"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "14",
+    "superproperty" : [ "3" ],
+    "domain" : "17",
     "comment" : {
       "en" : "If this Entity prov:wasQuotedFrom Entity :e, then it can qualify how using prov:qualifiedQuotation [ a prov:Quotation;  prov:entity :e; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "89"
+    "attributes" : [ "object", "external" ],
+    "id" : "85"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadPlan",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "92",
+    "range" : "88",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "wasPlanOf",
-        "type" : "label"
-      }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "wasPlanOf",
-        "type" : "label"
-      } ],
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
         "language" : "undefined",
@@ -6467,6 +6417,17 @@
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Plan",
         "type" : "iri"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "wasPlanOf",
+        "type" : "label"
+      }, {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "wasPlanOf",
+        "type" : "label"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -6511,28 +6472,17 @@
       "IRI-based" : "hadPlan",
       "undefined" : "hadPlan"
     },
-    "domain" : "91",
+    "domain" : "87",
     "comment" : {
       "en" : "The _optional_ Plan adopted by an Agent in Association with some Activity. Plan specifications are out of the scope of this specification."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "90"
+    "attributes" : [ "object", "external" ],
+    "id" : "86"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedUsage",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "8",
+    "range" : "12",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedUsingActivity",
-        "type" : "label"
-      }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedUsingActivity",
-        "type" : "label"
-      } ],
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
         "language" : "undefined",
@@ -6543,6 +6493,17 @@
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Usage",
         "type" : "iri"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedUsingActivity",
+        "type" : "label"
+      }, {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedUsingActivity",
+        "type" : "label"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -6598,28 +6559,41 @@
       "IRI-based" : "qualifiedUsage",
       "undefined" : "qualifiedUsage"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "34",
+    "superproperty" : [ "3" ],
+    "domain" : "9",
     "comment" : {
       "en" : "If this Activity prov:used Entity :e, then it can qualify how it used it using prov:qualifiedUsage [ a prov:Usage; prov:entity :e; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "93"
+    "attributes" : [ "object", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#registeredOn",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "registeredOn"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "Indicates when the consent instance was registered."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "90"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasUsedInDerivation",
-    "inverse" : "96",
+    "inverse" : "95",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "66",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -6627,24 +6601,24 @@
       "IRI-based" : "wasUsedInDerivation",
       "undefined" : "wasUsedInDerivation"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "95"
+    "domain" : "12",
+    "attributes" : [ "object", "external" ],
+    "id" : "94"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAssociateFor",
     "inverse" : "98",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -6652,8 +6626,8 @@
       "IRI-based" : "wasAssociateFor",
       "undefined" : "wasAssociateFor"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "23",
+    "attributes" : [ "object", "external" ],
     "id" : "97"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasInfluencedBy",
@@ -6707,12 +6681,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -6768,18 +6742,18 @@
       "undefined" : "wasInfluencedBy"
     },
     "domain" : "99",
-    "subproperty" : [ "101", "102", "38", "103", "104", "98", "105", "22", "106", "60", "107" ],
+    "subproperty" : [ "101", "102", "38", "103", "104", "98", "105", "24", "106", "60", "107" ],
     "comment" : {
       "en" : "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable.",
       "undefined" : "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "79"
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadRevision",
-    "inverse" : "81",
+    "inverse" : "79",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -6797,13 +6771,13 @@
       "IRI-based" : "hadRevision",
       "undefined" : "hadRevision"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "18",
+    "attributes" : [ "object", "external" ],
     "id" : "108"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "36",
+    "range" : "23",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -6868,22 +6842,22 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Attribution",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Attribution",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#qualifiedAttribution",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#qualifiedAttribution",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Attribution",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Attribution",
         "type" : "iri"
       } ]
     },
@@ -6891,29 +6865,18 @@
       "IRI-based" : "wasAttributedTo",
       "undefined" : "wasAttributedTo"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "14",
+    "superproperty" : [ "77" ],
+    "domain" : "17",
     "comment" : {
       "en" : "Attribution is the ascribing of an entity to an agent."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "103"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedRevision",
     "baseIri" : "http://www.w3.org/ns/prov",
     "range" : "70",
     "annotations" : {
-      "sharesDefinitionWith" : [ {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Revision",
-        "type" : "iri"
-      }, {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Revision",
-        "type" : "iri"
-      } ],
       "inverse" : [ {
         "identifier" : "inverse",
         "language" : "undefined",
@@ -6924,6 +6887,17 @@
         "language" : "undefined",
         "value" : "revisedEntity",
         "type" : "label"
+      } ],
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Revision",
+        "type" : "iri"
+      }, {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Revision",
+        "type" : "iri"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -6979,12 +6953,12 @@
       "IRI-based" : "qualifiedRevision",
       "undefined" : "qualifiedRevision"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "14",
+    "superproperty" : [ "3" ],
+    "domain" : "17",
     "comment" : {
       "en" : "If this Entity prov:wasRevisionOf Entity :e, then it can qualify how it was revised using prov:qualifiedRevision [ a prov:Revision;  prov:entity :e; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "109"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedPrimarySource",
@@ -7067,13 +7041,104 @@
       "IRI-based" : "qualifiedPrimarySource",
       "undefined" : "qualifiedPrimarySource"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "14",
+    "superproperty" : [ "3" ],
+    "domain" : "17",
     "comment" : {
       "en" : "If this Entity prov:hadPrimarySource Entity :e, then it can qualify how using prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :e; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "110"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#pairEntity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "17",
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "collections",
+        "type" : "label"
+      }, {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "collections",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-membership",
+        "type" : "label"
+      }, {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-membership",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The entity of a prov:KeyEntityPair, which is an element of a prov:Dictionary.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The entity of a prov:KeyEntityPair, which is an element of a prov:Dictionary.",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "collections",
+        "type" : "label"
+      }, {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "collections",
+        "type" : "label"
+      } ],
+      "constraints" : [ {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#dictionary-constraints",
+        "type" : "label"
+      }, {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#dictionary-constraints",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-membership",
+        "type" : "label"
+      }, {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-membership",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pairEntity",
+      "undefined" : "pairKey"
+    },
+    "cardinality" : "1",
+    "domain" : "25",
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "112"
   }, {
     "iri" : "http://www.w3.org/ns/prov#pairKey",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -7162,104 +7227,13 @@
       "undefined" : "pairKey"
     },
     "cardinality" : "1",
-    "domain" : "20",
-    "attributes" : [ "functional", "external", "datatype" ],
+    "domain" : "25",
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "113"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#pairEntity",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
-    "annotations" : {
-      "component" : [ {
-        "identifier" : "component",
-        "language" : "undefined",
-        "value" : "collections",
-        "type" : "label"
-      }, {
-        "identifier" : "component",
-        "language" : "undefined",
-        "value" : "collections",
-        "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
-        "type" : "iri"
-      } ],
-      "dm" : [ {
-        "identifier" : "dm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-membership",
-        "type" : "label"
-      }, {
-        "identifier" : "dm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-membership",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The entity of a prov:KeyEntityPair, which is an element of a prov:Dictionary.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The entity of a prov:KeyEntityPair, which is an element of a prov:Dictionary.",
-        "type" : "label"
-      } ],
-      "category" : [ {
-        "identifier" : "category",
-        "language" : "undefined",
-        "value" : "collections",
-        "type" : "label"
-      }, {
-        "identifier" : "category",
-        "language" : "undefined",
-        "value" : "collections",
-        "type" : "label"
-      } ],
-      "constraints" : [ {
-        "identifier" : "constraints",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#dictionary-constraints",
-        "type" : "label"
-      }, {
-        "identifier" : "constraints",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#dictionary-constraints",
-        "type" : "label"
-      } ],
-      "n" : [ {
-        "identifier" : "n",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-membership",
-        "type" : "label"
-      }, {
-        "identifier" : "n",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-membership",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "pairEntity",
-      "undefined" : "pairKey"
-    },
-    "cardinality" : "1",
-    "domain" : "20",
-    "attributes" : [ "functional", "external", "object" ],
-    "id" : "115"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedInvalidation",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "10",
+    "range" : "14",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -7337,53 +7311,28 @@
       "IRI-based" : "qualifiedInvalidation",
       "undefined" : "qualifiedInvalidation"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "14",
+    "superproperty" : [ "3" ],
+    "domain" : "17",
     "comment" : {
       "en" : "If this Entity prov:wasInvalidatedBy Activity :a, then it can qualify how it was invalidated using prov:qualifiedInvalidation [ a prov:Invalidation;  prov:activity :a; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "116"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#wasPlanOf",
-    "inverse" : "90",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "wasPlanOf",
-      "undefined" : "wasPlanOf"
-    },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "117"
+    "attributes" : [ "object", "external" ],
+    "id" : "115"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasPrimarySourceOf",
-    "inverse" : "80",
+    "inverse" : "78",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -7391,13 +7340,38 @@
       "IRI-based" : "wasPrimarySourceOf",
       "undefined" : "wasPrimarySourceOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "118"
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasPlanOf",
+    "inverse" : "86",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "87",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasPlanOf",
+      "undefined" : "wasPlanOf"
+    },
+    "domain" : "88",
+    "attributes" : [ "object", "external" ],
+    "id" : "117"
   }, {
     "iri" : "http://www.w3.org/ns/prov#removedKey",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "120",
+    "range" : "119",
     "annotations" : {
       "component" : [ {
         "identifier" : "component",
@@ -7483,13 +7457,13 @@
     },
     "minCardinality" : "1",
     "domain" : "69",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "119"
+    "attributes" : [ "datatype", "external" ],
+    "id" : "118"
   }, {
     "iri" : "http://www.w3.org/ns/prov#started",
     "inverse" : "105",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7507,25 +7481,14 @@
       "IRI-based" : "started",
       "undefined" : "started"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "121"
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "120"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedDerivation",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "65",
+    "range" : "66",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedDerivationOf",
-        "type" : "label"
-      }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedDerivationOf",
-        "type" : "label"
-      } ],
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
         "language" : "undefined",
@@ -7536,6 +7499,17 @@
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Derivation",
         "type" : "iri"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedDerivationOf",
+        "type" : "label"
+      }, {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedDerivationOf",
+        "type" : "label"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -7591,29 +7565,29 @@
       "IRI-based" : "qualifiedDerivation",
       "undefined" : "qualifiedDerivation"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "14",
-    "subproperty" : [ "127", "29" ],
+    "superproperty" : [ "3" ],
+    "domain" : "17",
+    "subproperty" : [ "126", "31" ],
     "comment" : {
       "en" : "If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "32"
+    "attributes" : [ "object", "external" ],
+    "id" : "34"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasMemberOf",
     "inverse" : "107",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "50",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -7621,13 +7595,13 @@
       "IRI-based" : "wasMemberOf",
       "undefined" : "wasMemberOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "128"
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "127"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasStartedBy",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -7691,12 +7665,12 @@
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedStart",
+        "value" : "http://www.w3.org/ns/prov#Start",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Start",
+        "value" : "http://www.w3.org/ns/prov#qualifiedStart",
         "type" : "iri"
       } ]
     },
@@ -7704,18 +7678,42 @@
       "IRI-based" : "wasStartedBy",
       "undefined" : "wasStartedBy"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "34",
+    "superproperty" : [ "77" ],
+    "domain" : "9",
     "comment" : {
       "en" : "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "105"
+  }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#validUntil",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "validUntil"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "Indicates when consent expires."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "128"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadActivity",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "34",
+    "range" : "9",
     "annotations" : {
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Activity",
+        "type" : "iri"
+      }, {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Activity",
+        "type" : "iri"
+      } ],
       "inverse" : [ {
         "identifier" : "inverse",
         "language" : "undefined",
@@ -7737,17 +7735,6 @@
         "language" : "en",
         "value" : "The multiple rdfs:domain assertions are intended. One is simpler and works for OWL-RL, the union is more specific but is not recognized by OWL-RL.",
         "type" : "label"
-      } ],
-      "sharesDefinitionWith" : [ {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Activity",
-        "type" : "iri"
-      }, {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Activity",
-        "type" : "iri"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -7792,28 +7779,28 @@
       "IRI-based" : "hadActivity",
       "undefined" : "hadActivity"
     },
-    "domain" : "130",
+    "domain" : "131",
     "comment" : {
       "en" : "The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead).",
       "undefined" : "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "129"
+    "attributes" : [ "object", "external" ],
+    "id" : "130"
   }, {
     "iri" : "http://www.w3.org/ns/prov#quotedAs",
-    "inverse" : "82",
+    "inverse" : "80",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -7821,25 +7808,14 @@
       "IRI-based" : "quotedAs",
       "undefined" : "quotedAs"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "133"
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "134"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedEnd",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "11",
+    "range" : "8",
     "annotations" : {
-      "sharesDefinitionWith" : [ {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#End",
-        "type" : "iri"
-      }, {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#End",
-        "type" : "iri"
-      } ],
       "inverse" : [ {
         "identifier" : "inverse",
         "language" : "undefined",
@@ -7850,6 +7826,17 @@
         "language" : "undefined",
         "value" : "qualifiedEndOf",
         "type" : "label"
+      } ],
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#End",
+        "type" : "iri"
+      }, {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#End",
+        "type" : "iri"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -7905,28 +7892,28 @@
       "IRI-based" : "qualifiedEnd",
       "undefined" : "qualifiedEnd"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "34",
+    "superproperty" : [ "3" ],
+    "domain" : "9",
     "comment" : {
       "en" : "If this Activity prov:wasEndedBy Entity :e1, then it can qualify how it was ended using prov:qualifiedEnd [ a prov:End;  prov:entity :e1; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "6"
+    "attributes" : [ "object", "external" ],
+    "id" : "10"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedInvalidationOf",
-    "inverse" : "116",
+    "inverse" : "115",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -7934,13 +7921,13 @@
       "IRI-based" : "qualifiedInvalidationOf",
       "undefined" : "qualifiedInvalidationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "134"
+    "domain" : "14",
+    "attributes" : [ "object", "external" ],
+    "id" : "135"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "36",
+    "range" : "23",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -7994,22 +7981,22 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Association",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Association",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#qualifiedAssociation",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#qualifiedAssociation",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Association",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Association",
         "type" : "iri"
       } ]
     },
@@ -8017,28 +8004,28 @@
       "IRI-based" : "wasAssociatedWith",
       "undefined" : "wasAssociatedWith"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "34",
+    "superproperty" : [ "77" ],
+    "domain" : "9",
     "comment" : {
       "en" : "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "98"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedQuotationOf",
-    "inverse" : "89",
+    "inverse" : "85",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -8046,13 +8033,13 @@
       "IRI-based" : "qualifiedQuotationOf",
       "undefined" : "qualifiedQuotationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "67",
+    "attributes" : [ "object", "external" ],
     "id" : "139"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasRevisionOf",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "15",
+    "range" : "18",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -8106,17 +8093,17 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedRevision",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedRevision",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Revision",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedRevision",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedRevision",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -8130,16 +8117,16 @@
       "undefined" : "wasRevisionOf"
     },
     "superproperty" : [ "38" ],
-    "domain" : "14",
+    "domain" : "17",
     "comment" : {
       "en" : "A revision is a derivation that revises an entity into a revised version."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "81"
+    "attributes" : [ "object", "external" ],
+    "id" : "79"
   }, {
     "iri" : "http://www.w3.org/ns/prov#dictionary",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "30",
+    "range" : "32",
     "annotations" : {
       "component" : [ {
         "identifier" : "component",
@@ -8171,17 +8158,17 @@
       }, {
         "identifier" : "dm",
         "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-removal",
+        "type" : "label"
+      }, {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-removal",
+        "type" : "label"
+      }, {
+        "identifier" : "dm",
+        "language" : "undefined",
         "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-insertion",
-        "type" : "label"
-      }, {
-        "identifier" : "dm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-removal",
-        "type" : "label"
-      }, {
-        "identifier" : "dm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#term-dictionary-removal",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -8220,22 +8207,22 @@
       "n" : [ {
         "identifier" : "n",
         "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-removal",
-        "type" : "label"
-      }, {
-        "identifier" : "n",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-insertion",
-        "type" : "label"
-      }, {
-        "identifier" : "n",
-        "language" : "undefined",
         "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-insertion",
         "type" : "label"
       }, {
         "identifier" : "n",
         "language" : "undefined",
         "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-removal",
+        "type" : "label"
+      }, {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-removal",
+        "type" : "label"
+      }, {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/NOTE-prov-dictionary-20130430/#expression-dictionary-insertion",
         "type" : "label"
       } ]
     },
@@ -8243,26 +8230,26 @@
       "IRI-based" : "dictionary",
       "undefined" : "dictionary"
     },
-    "superproperty" : [ "55" ],
+    "superproperty" : [ "56" ],
     "cardinality" : "1",
     "domain" : "143",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "142"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadInfluence",
-    "inverse" : "145",
+    "inverse" : "146",
     "baseIri" : "http://www.w3.org/ns/prov",
     "range" : "1",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -8270,13 +8257,13 @@
       "IRI-based" : "hadInfluence",
       "undefined" : "hadInfluence"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "145",
+    "attributes" : [ "object", "external" ],
     "id" : "144"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasEndedBy",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -8330,7 +8317,7 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedEnd",
+        "value" : "http://www.w3.org/ns/prov#End",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -8345,7 +8332,7 @@
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#End",
+        "value" : "http://www.w3.org/ns/prov#qualifiedEnd",
         "type" : "iri"
       } ]
     },
@@ -8353,33 +8340,33 @@
       "IRI-based" : "wasEndedBy",
       "undefined" : "wasEndedBy"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "34",
+    "superproperty" : [ "77" ],
+    "domain" : "9",
     "comment" : {
       "en" : "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "101"
   }, {
-    "range" : "14",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "148"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedAttributionOf",
     "inverse" : "150",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -8387,24 +8374,24 @@
       "IRI-based" : "qualifiedAttributionOf",
       "undefined" : "qualifiedAttributionOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "111",
+    "attributes" : [ "object", "external" ],
     "id" : "149"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasActivityOfInfluence",
-    "inverse" : "129",
+    "inverse" : "130",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "131",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -8412,33 +8399,46 @@
       "IRI-based" : "wasActivityOfInfluence",
       "undefined" : "wasActivityOfInfluence"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
     "id" : "151"
   }, {
-    "range" : "14",
-    "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "17",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "156"
   }, {
-    "range" : "36",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "158"
+    "iri" : "http://adaptcentre.ie/consent/voc#givenBy",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "givenBy"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "Indicates who has given consent."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "157"
   }, {
-    "range" : "23",
-    "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "11",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "159"
   }, {
-    "range" : "36",
-    "domain" : "51",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "55",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "160"
+  }, {
+    "range" : "23",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadPrimarySource",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -8516,35 +8516,24 @@
       "undefined" : "hadPrimarySource"
     },
     "superproperty" : [ "38" ],
-    "domain" : "14",
-    "attributes" : [ "external", "object" ],
-    "id" : "80"
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
   }, {
-    "range" : "65",
+    "range" : "66",
     "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "161"
-  }, {
-    "range" : "36",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "162"
+  }, {
+    "range" : "23",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedAttribution",
     "baseIri" : "http://www.w3.org/ns/prov",
     "range" : "111",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedAttributionOf",
-        "type" : "label"
-      }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "qualifiedAttributionOf",
-        "type" : "label"
-      } ],
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
         "language" : "undefined",
@@ -8555,6 +8544,17 @@
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Attribution",
         "type" : "iri"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedAttributionOf",
+        "type" : "label"
+      }, {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedAttributionOf",
+        "type" : "label"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -8610,18 +8610,18 @@
       "IRI-based" : "qualifiedAttribution",
       "undefined" : "qualifiedAttribution"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "14",
+    "superproperty" : [ "3" ],
+    "domain" : "17",
     "comment" : {
       "en" : "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "150"
   }, {
     "iri" : "http://www.w3.org/ns/prov#influenced",
-    "inverse" : "79",
+    "inverse" : "77",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "99",
     "annotations" : {
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
@@ -8664,22 +8664,22 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov-o-inverses#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ],
       "category" : [ {
@@ -8698,14 +8698,14 @@
       "IRI-based" : "influenced",
       "undefined" : "influenced"
     },
-    "domain" : "1",
-    "subproperty" : [ "163", "59" ],
-    "attributes" : [ "external", "object" ],
+    "domain" : "100",
+    "subproperty" : [ "164", "59" ],
+    "attributes" : [ "object", "external" ],
     "id" : "61"
   }, {
     "iri" : "http://www.w3.org/ns/prov#derivedByRemovalFrom",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "30",
+    "range" : "32",
     "annotations" : {
       "component" : [ {
         "identifier" : "component",
@@ -8790,47 +8790,47 @@
       "undefined" : "derivedByRemovalFrom"
     },
     "superproperty" : [ "38" ],
-    "domain" : "30",
-    "attributes" : [ "external", "object" ],
-    "id" : "83"
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
+    "id" : "81"
   }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#registeredOn",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "range" : "137",
+    "iri" : "http://adaptcentre.ie/consent/voc#ofPurpose",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "range" : "64",
     "label" : {
-      "IRI-based" : "registeredOn"
+      "IRI-based" : "ofPurpose"
     },
-    "domain" : "78",
+    "domain" : "132",
     "comment" : {
-      "undefined" : "Indicates when the consent instance was registered."
+      "undefined" : "of purpose"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "164"
-  }, {
-    "range" : "48",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "165"
   }, {
-    "range" : "30",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "49",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "166"
   }, {
-    "range" : "36",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "32",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "167"
   }, {
-    "range" : "36",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "23",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "168"
   }, {
     "range" : "23",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "169"
+  }, {
+    "range" : "26",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedRemoval",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -8918,40 +8918,40 @@
       "IRI-based" : "qualifiedRemoval",
       "undefined" : "qualifiedRemoval"
     },
-    "superproperty" : [ "32" ],
-    "domain" : "30",
-    "attributes" : [ "external", "object" ],
-    "id" : "127"
+    "superproperty" : [ "34" ],
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
+    "id" : "126"
   }, {
-    "range" : "7",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "170"
-  }, {
-    "range" : "23",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "171"
   }, {
-    "range" : "23",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "26",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "172"
   }, {
+    "range" : "26",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedStartOf",
-    "inverse" : "88",
+    "inverse" : "84",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -8959,19 +8959,19 @@
       "IRI-based" : "qualifiedStartOf",
       "undefined" : "qualifiedStartOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "173"
-  }, {
-    "range" : "7",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
     "id" : "174"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
   }, {
     "iri" : "http://www.w3.org/ns/prov#revisedEntity",
     "inverse" : "109",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8989,29 +8989,29 @@
       "IRI-based" : "revisedEntity",
       "undefined" : "revisedEntity"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "175"
-  }, {
-    "range" : "7",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "70",
+    "attributes" : [ "object", "external" ],
     "id" : "176"
   }, {
+    "range" : "11",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedDerivationOf",
-    "inverse" : "32",
+    "inverse" : "34",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -9019,24 +9019,24 @@
       "IRI-based" : "qualifiedDerivationOf",
       "undefined" : "qualifiedDerivationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "177"
+    "domain" : "66",
+    "attributes" : [ "object", "external" ],
+    "id" : "178"
   }, {
     "iri" : "http://www.w3.org/ns/prov#generalizationOf",
-    "inverse" : "13",
+    "inverse" : "16",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -9044,39 +9044,13 @@
       "IRI-based" : "generalizationOf",
       "undefined" : "generalizationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "178"
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#forInclusion",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "range" : "53",
-    "label" : {
-      "IRI-based" : "forInclusion"
-    },
-    "domain" : "78",
-    "comment" : {
-      "undefined" : "for inclusion"
-    },
-    "attributes" : [ "functional", "object" ],
+    "domain" : "18",
+    "attributes" : [ "object", "external" ],
     "id" : "179"
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#isGiven",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "range" : "138",
-    "label" : {
-      "IRI-based" : "isGiven"
-    },
-    "domain" : "78",
-    "comment" : {
-      "undefined" : "Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.)."
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "180"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadDictionaryMember",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "20",
+    "range" : "25",
     "annotations" : {
       "component" : [ {
         "identifier" : "component",
@@ -9160,35 +9134,24 @@
       "IRI-based" : "hadDictionaryMember",
       "undefined" : "hadDictionaryMember"
     },
-    "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
+    "id" : "180"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "181"
   }, {
-    "range" : "7",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "182"
-  }, {
-    "range" : "7",
-    "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "183"
   }, {
     "iri" : "http://www.w3.org/ns/prov#influencer",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "184",
+    "range" : "145",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "hadInfluence",
-        "type" : "label"
-      }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "hadInfluence",
-        "type" : "label"
-      } ],
       "editorialNote" : [ {
         "identifier" : "editorialNote",
         "language" : "en",
@@ -9198,6 +9161,17 @@
         "identifier" : "editorialNote",
         "language" : "en",
         "value" : "This property and its subproperties are used in the same way as the rdf:object property, i.e. to reference the object of an unqualified prov:wasInfluencedBy or prov:influenced triple.",
+        "type" : "label"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "hadInfluence",
+        "type" : "label"
+      }, {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "hadInfluence",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -9254,29 +9228,18 @@
       "IRI-based" : "influencer",
       "undefined" : "influencer"
     },
-    "domain" : "24",
-    "subproperty" : [ "42", "55", "185" ],
+    "domain" : "1",
+    "subproperty" : [ "43", "56", "183" ],
     "comment" : {
       "en" : "Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "145"
+    "attributes" : [ "object", "external" ],
+    "id" : "146"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadGeneration",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "9",
+    "range" : "13",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "generatedAsDerivation",
-        "type" : "label"
-      }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "generatedAsDerivation",
-        "type" : "label"
-      } ],
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
         "language" : "undefined",
@@ -9287,6 +9250,17 @@
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Generation",
         "type" : "iri"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "generatedAsDerivation",
+        "type" : "label"
+      }, {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "generatedAsDerivation",
+        "type" : "label"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -9331,16 +9305,16 @@
       "IRI-based" : "hadGeneration",
       "undefined" : "hadGeneration"
     },
-    "domain" : "65",
+    "domain" : "66",
     "comment" : {
       "en" : "The _optional_ Generation involved in an Entity's Derivation."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "187"
+    "attributes" : [ "object", "external" ],
+    "id" : "185"
   }, {
     "iri" : "http://www.w3.org/ns/prov#startedAtTime",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "132",
+    "range" : "133",
     "annotations" : {
       "editorialNote" : [ {
         "identifier" : "editorialNote",
@@ -9389,17 +9363,17 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Start",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Start",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#atTime",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Start",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Start",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -9412,37 +9386,37 @@
       "IRI-based" : "startedAtTime",
       "undefined" : "startedAtTime"
     },
-    "domain" : "34",
+    "domain" : "9",
     "comment" : {
       "en" : "The time at which an activity started. See also prov:endedAtTime."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
+    "id" : "186"
+  }, {
+    "range" : "123",
+    "domain" : "136",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "17",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "188"
-  }, {
-    "range" : "124",
-    "domain" : "135",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "189"
-  }, {
-    "range" : "14",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "190"
   }, {
     "iri" : "http://www.w3.org/ns/prov#contributed",
     "inverse" : "103",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -9450,23 +9424,23 @@
       "IRI-based" : "contributed",
       "undefined" : "contributed"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "23",
+    "attributes" : [ "object", "external" ],
+    "id" : "189"
+  }, {
+    "range" : "1",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "1",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "191"
-  }, {
-    "range" : "24",
-    "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "192"
-  }, {
-    "range" : "24",
-    "domain" : "112",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "193"
   }, {
     "iri" : "http://www.w3.org/ns/prov#has_provenance",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "5",
     "annotations" : {
       "aq" : [ {
         "identifier" : "aq",
@@ -9497,16 +9471,16 @@
       "IRI-based" : "has_provenance",
       "undefined" : "has_provenance"
     },
-    "domain" : "1",
+    "domain" : "5",
     "comment" : {
       "en" : "Indicates a provenance-URI for a resource; the resource identified by this property presents a provenance record about its subject or anchor resource."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "194"
+    "attributes" : [ "object", "external" ],
+    "id" : "192"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasQuotedFrom",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -9565,17 +9539,17 @@
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedQuotation",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedQuotation",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Quotation",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedQuotation",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedQuotation",
         "type" : "iri"
       } ]
     },
@@ -9584,32 +9558,32 @@
       "undefined" : "wasQuotedFrom"
     },
     "superproperty" : [ "38" ],
-    "domain" : "14",
+    "domain" : "17",
     "comment" : {
       "en" : "An entity is derived from an original entity by copying, or 'quoting', some or all of it."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "82"
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
   }, {
-    "range" : "14",
-    "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "195"
+    "range" : "17",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
   }, {
     "iri" : "http://www.w3.org/ns/prov#locationOf",
-    "inverse" : "26",
+    "inverse" : "28",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "29",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -9617,13 +9591,13 @@
       "IRI-based" : "locationOf",
       "undefined" : "locationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "196"
+    "domain" : "30",
+    "attributes" : [ "object", "external" ],
+    "id" : "194"
   }, {
     "iri" : "http://www.w3.org/ns/prov#used",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -9677,12 +9651,12 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Usage",
+        "value" : "http://www.w3.org/ns/prov#qualifiedUsage",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedUsage",
+        "value" : "http://www.w3.org/ns/prov#Usage",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -9700,28 +9674,28 @@
       "IRI-based" : "used",
       "undefined" : "used"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "34",
+    "superproperty" : [ "77" ],
+    "domain" : "9",
     "comment" : {
       "en" : "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "104"
   }, {
     "iri" : "http://www.w3.org/ns/prov#generatedAsDerivation",
-    "inverse" : "187",
+    "inverse" : "185",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "66",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -9729,13 +9703,13 @@
       "IRI-based" : "generatedAsDerivation",
       "undefined" : "generatedAsDerivation"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "197"
+    "domain" : "13",
+    "attributes" : [ "object", "external" ],
+    "id" : "195"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadUsage",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "8",
+    "range" : "12",
     "annotations" : {
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
@@ -9773,22 +9747,22 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       } ],
       "category" : [ {
@@ -9807,28 +9781,17 @@
       "IRI-based" : "hadUsage",
       "undefined" : "hadUsage"
     },
-    "domain" : "65",
+    "domain" : "66",
     "comment" : {
       "en" : "The _optional_ Usage involved in an Entity's Derivation."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "96"
+    "attributes" : [ "object", "external" ],
+    "id" : "95"
   }, {
     "iri" : "http://www.w3.org/ns/prov#agent",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "36",
+    "range" : "23",
     "annotations" : {
-      "editorialNote" : [ {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.",
-        "type" : "label"
-      }, {
-        "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.",
-        "type" : "label"
-      } ],
       "inverse" : [ {
         "identifier" : "inverse",
         "language" : "undefined",
@@ -9838,6 +9801,17 @@
         "identifier" : "inverse",
         "language" : "undefined",
         "value" : "agentOfInfluence",
+        "type" : "label"
+      } ],
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.",
+        "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -9883,25 +9857,25 @@
       "IRI-based" : "agent",
       "undefined" : "agent"
     },
-    "superproperty" : [ "145" ],
-    "domain" : "112",
-    "attributes" : [ "external", "object" ],
-    "id" : "42"
+    "superproperty" : [ "146" ],
+    "domain" : "42",
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedDelegationOf",
     "inverse" : "71",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "23",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -9909,18 +9883,18 @@
       "IRI-based" : "qualifiedDelegationOf",
       "undefined" : "qualifiedDelegationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "198"
+    "domain" : "72",
+    "attributes" : [ "object", "external" ],
+    "id" : "196"
   }, {
-    "range" : "14",
-    "domain" : "92",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "199"
+    "range" : "17",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedAssociation",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "91",
+    "range" : "87",
     "annotations" : {
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
@@ -9998,58 +9972,58 @@
       "IRI-based" : "qualifiedAssociation",
       "undefined" : "qualifiedAssociation"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "34",
+    "superproperty" : [ "3" ],
+    "domain" : "9",
     "comment" : {
       "en" : "If this Activity prov:wasAssociatedWith Agent :ag, then it can qualify the Association using prov:qualifiedAssociation [ a prov:Association;  prov:agent :ag; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "198"
+  }, {
+    "range" : "17",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "17",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "200"
   }, {
-    "range" : "14",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "9",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "201"
   }, {
-    "range" : "14",
-    "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "17",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "202"
   }, {
-    "range" : "34",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "17",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "203"
   }, {
-    "range" : "14",
-    "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "9",
+    "domain" : "123",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "204"
   }, {
-    "range" : "14",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "9",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "205"
   }, {
-    "range" : "34",
-    "domain" : "124",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "9",
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "206"
   }, {
-    "range" : "34",
-    "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "207"
-  }, {
-    "range" : "34",
-    "domain" : "126",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "208"
-  }, {
     "iri" : "http://www.w3.org/ns/prov#alternateOf",
-    "inverse" : "16",
+    "inverse" : "19",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -10076,22 +10050,22 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -10170,19 +10144,58 @@
       "IRI-based" : "alternateOf",
       "undefined" : "alternateOf"
     },
-    "domain" : "14",
-    "subproperty" : [ "13" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "16"
+    "domain" : "17",
+    "subproperty" : [ "16" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
   }, {
-    "range" : "34",
-    "domain" : "125",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "9",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#ofPolicy",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "ofPolicy"
+    },
+    "domain" : "132",
+    "comment" : {
+      "undefined" : "of policy"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#forInclusion",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "range" : "132",
+    "label" : {
+      "IRI-based" : "forInclusion"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "Indicates the inclusion for which consent was (not) given."
+    },
+    "attributes" : [ "object", "functional" ],
     "id" : "209"
+  }, {
+    "iri" : "http://adaptcentre.ie/consent/voc#isGiven",
+    "baseIri" : "http://adaptcentre.ie/consent/voc",
+    "range" : "138",
+    "label" : {
+      "IRI-based" : "isGiven"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.)."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "210"
   }, {
     "iri" : "http://www.w3.org/ns/prov#invalidatedAtTime",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "136",
+    "range" : "137",
     "annotations" : {
       "editorialNote" : [ {
         "identifier" : "editorialNote",
@@ -10231,12 +10244,12 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Invalidation",
+        "value" : "http://www.w3.org/ns/prov#atTime",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#atTime",
+        "value" : "http://www.w3.org/ns/prov#Invalidation",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -10254,16 +10267,16 @@
       "IRI-based" : "invalidatedAtTime",
       "undefined" : "invalidatedAtTime"
     },
-    "domain" : "14",
+    "domain" : "17",
     "comment" : {
       "en" : "The time at which an entity was invalidated (i.e., no longer usable)."
     },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "210"
+    "attributes" : [ "datatype", "external" ],
+    "id" : "211"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasInformedBy",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "34",
+    "range" : "9",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -10317,7 +10330,7 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedCommunication",
+        "value" : "http://www.w3.org/ns/prov#Communication",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -10332,7 +10345,7 @@
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Communication",
+        "value" : "http://www.w3.org/ns/prov#qualifiedCommunication",
         "type" : "iri"
       } ]
     },
@@ -10340,29 +10353,18 @@
       "IRI-based" : "wasInformedBy",
       "undefined" : "wasInformedBy"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "34",
+    "superproperty" : [ "77" ],
+    "domain" : "9",
     "comment" : {
       "en" : "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "106"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedGeneration",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "9",
+    "range" : "13",
     "annotations" : {
-      "sharesDefinitionWith" : [ {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Generation",
-        "type" : "iri"
-      }, {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Generation",
-        "type" : "iri"
-      } ],
       "inverse" : [ {
         "identifier" : "inverse",
         "language" : "undefined",
@@ -10373,6 +10375,17 @@
         "language" : "undefined",
         "value" : "qualifiedGenerationOf",
         "type" : "label"
+      } ],
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
+      }, {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
       } ],
       "component" : [ {
         "identifier" : "component",
@@ -10428,17 +10441,17 @@
       "IRI-based" : "qualifiedGeneration",
       "undefined" : "qualifiedGeneration"
     },
-    "superproperty" : [ "2" ],
-    "domain" : "14",
+    "superproperty" : [ "3" ],
+    "domain" : "17",
     "comment" : {
       "en" : "If this Activity prov:generated Entity :e, then it can qualify how it performed the Generation using prov:qualifiedGeneration [ a prov:Generation;  prov:entity :e; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "211"
+    "attributes" : [ "object", "external" ],
+    "id" : "212"
   }, {
     "iri" : "http://www.w3.org/ns/prov#insertedKeyEntityPair",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "20",
+    "range" : "25",
     "annotations" : {
       "component" : [ {
         "identifier" : "component",
@@ -10523,14 +10536,14 @@
       "undefined" : "insertedKeyEntityPair"
     },
     "minCardinality" : "1",
-    "domain" : "31",
-    "attributes" : [ "external", "object" ],
-    "id" : "212"
+    "domain" : "33",
+    "attributes" : [ "object", "external" ],
+    "id" : "213"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadDerivation",
     "inverse" : "38",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10548,15 +10561,26 @@
       "IRI-based" : "hadDerivation",
       "undefined" : "hadDerivation"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "213"
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "214"
   }, {
     "iri" : "http://www.w3.org/ns/prov#generated",
     "inverse" : "102",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
+      }, {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
+      } ],
       "inverse" : [ {
         "identifier" : "inverse",
         "language" : "undefined",
@@ -10579,17 +10603,6 @@
         "value" : "prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions.",
         "type" : "label"
       } ],
-      "sharesDefinitionWith" : [ {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Generation",
-        "type" : "iri"
-      }, {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Generation",
-        "type" : "iri"
-      } ],
       "component" : [ {
         "identifier" : "component",
         "language" : "undefined",
@@ -10604,7 +10617,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -10624,7 +10637,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ],
       "category" : [ {
@@ -10644,23 +10657,23 @@
       "undefined" : "generated"
     },
     "superproperty" : [ "61" ],
-    "domain" : "34",
-    "attributes" : [ "external", "object" ],
-    "id" : "163"
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "164"
   }, {
-    "range" : "34",
-    "domain" : "94",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "214"
-  }, {
-    "range" : "34",
-    "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "9",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "215"
+  }, {
+    "range" : "9",
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
   }, {
     "iri" : "http://www.w3.org/ns/prov#actedOnBehalfOf",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "36",
+    "range" : "23",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -10737,42 +10750,42 @@
       "IRI-based" : "actedOnBehalfOf",
       "undefined" : "actedOnBehalfOf"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "36",
+    "superproperty" : [ "77" ],
+    "domain" : "23",
     "comment" : {
       "en" : "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "22"
+    "attributes" : [ "object", "external" ],
+    "id" : "24"
   }, {
-    "range" : "34",
-    "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "216"
-  }, {
-    "range" : "65",
-    "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "9",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "217"
   }, {
-    "range" : "65",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "66",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "218"
   }, {
-    "range" : "65",
-    "domain" : "70",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "66",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "219"
   }, {
-    "range" : "65",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "66",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "220"
+  }, {
+    "range" : "66",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "34",
+    "range" : "9",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -10799,6 +10812,16 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov-o#",
         "type" : "iri"
       }, {
@@ -10810,16 +10833,6 @@
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov-o-inverses#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ],
       "category" : [ {
@@ -10836,17 +10849,17 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedGeneration",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedGeneration",
-        "type" : "iri"
-      }, {
-        "identifier" : "qualifiedForm",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedGeneration",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedGeneration",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
@@ -10859,14 +10872,14 @@
       "IRI-based" : "wasGeneratedBy",
       "undefined" : "wasGeneratedBy"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "14",
-    "attributes" : [ "external", "object" ],
+    "superproperty" : [ "77" ],
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
     "id" : "102"
   }, {
     "iri" : "http://www.w3.org/ns/prov#entity",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "editorialNote" : [ {
         "identifier" : "editorialNote",
@@ -10933,57 +10946,46 @@
       "IRI-based" : "entity",
       "undefined" : "entity"
     },
-    "superproperty" : [ "145" ],
-    "domain" : "66",
+    "superproperty" : [ "146" ],
+    "domain" : "55",
     "subproperty" : [ "142" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "55"
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
   }, {
-    "range" : "19",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "221"
-  }, {
-    "range" : "131",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "96",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "222"
   }, {
-    "range" : "50",
-    "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "64",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "223"
   }, {
-    "range" : "50",
-    "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "132",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "224"
   }, {
-    "range" : "131",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "96",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "225"
   }, {
-    "range" : "19",
+    "range" : "64",
     "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "226"
+  }, {
+    "range" : "96",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
   }, {
     "iri" : "http://www.w3.org/ns/prov#activity",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "34",
+    "range" : "9",
     "annotations" : {
-      "inverse" : [ {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "activityOfInfluence",
-        "type" : "label"
-      }, {
-        "identifier" : "inverse",
-        "language" : "undefined",
-        "value" : "activityOfInfluence",
-        "type" : "label"
-      } ],
       "editorialNote" : [ {
         "identifier" : "editorialNote",
         "language" : "en",
@@ -10993,6 +10995,17 @@
         "identifier" : "editorialNote",
         "language" : "en",
         "value" : "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.",
+        "type" : "label"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "activityOfInfluence",
+        "type" : "label"
+      }, {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "activityOfInfluence",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -11038,19 +11051,19 @@
       "IRI-based" : "activity",
       "undefined" : "activity"
     },
-    "superproperty" : [ "145" ],
-    "domain" : "23",
-    "attributes" : [ "external", "object" ],
-    "id" : "185"
+    "superproperty" : [ "146" ],
+    "domain" : "26",
+    "attributes" : [ "object", "external" ],
+    "id" : "183"
   }, {
-    "range" : "131",
-    "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "227"
+    "range" : "64",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadMember",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "14",
+    "range" : "17",
     "annotations" : {
       "inverse" : [ {
         "identifier" : "inverse",
@@ -11117,20 +11130,20 @@
       "IRI-based" : "hadMember",
       "undefined" : "hadMember"
     },
-    "superproperty" : [ "79" ],
-    "domain" : "49",
-    "attributes" : [ "external", "object" ],
+    "superproperty" : [ "77" ],
+    "domain" : "50",
+    "attributes" : [ "object", "external" ],
     "id" : "107"
   }, {
-    "range" : "131",
-    "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "228"
+    "range" : "64",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedGenerationOf",
-    "inverse" : "211",
+    "inverse" : "212",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11148,14 +11161,14 @@
       "IRI-based" : "qualifiedGenerationOf",
       "undefined" : "qualifiedGenerationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "229"
+    "domain" : "13",
+    "attributes" : [ "object", "external" ],
+    "id" : "230"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasRoleIn",
-    "inverse" : "231",
+    "inverse" : "232",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "184",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11173,14 +11186,14 @@
       "IRI-based" : "wasRoleIn",
       "undefined" : "wasRoleIn"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "230"
+    "domain" : "141",
+    "attributes" : [ "object", "external" ],
+    "id" : "231"
   }, {
-    "range" : "50",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "232"
+    "range" : "53",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
   }, {
     "iri" : "http://www.w3.org/ns/prov#asInBundle",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -11224,32 +11237,32 @@
       "IRI-based" : "asInBundle",
       "undefined" : "asInBundle"
     },
-    "domain" : "14",
+    "domain" : "17",
     "comment" : {
       "en" : "prov:asInBundle is used to specify which bundle the general entity of a prov:mentionOf property is described.\n\nWhen :x prov:mentionOf :y and :y is described in Bundle :b, the triple :x prov:asInBundle :b is also asserted to cite the Bundle in which :y was described."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "233"
-  }, {
-    "range" : "53",
-    "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "234"
   }, {
+    "range" : "132",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
+  }, {
     "iri" : "http://www.w3.org/ns/prov#activityOfInfluence",
-    "inverse" : "185",
+    "inverse" : "183",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "26",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       } ]
     },
@@ -11257,39 +11270,64 @@
       "IRI-based" : "activityOfInfluence",
       "undefined" : "activityOfInfluence"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "235"
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "236"
   }, {
     "range" : "141",
     "domain" : "140",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "236"
-  }, {
-    "range" : "49",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "237"
   }, {
-    "range" : "141",
-    "domain" : "154",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "50",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "238"
   }, {
     "range" : "141",
-    "domain" : "147",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "154",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "239"
+  }, {
+    "range" : "141",
+    "domain" : "147",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
   }, {
     "range" : "154",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "240"
-  }, {
-    "range" : "66",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "241"
+  }, {
+    "range" : "55",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#qualifiedUsingActivity",
+    "inverse" : "89",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "qualifiedUsingActivity",
+      "undefined" : "qualifiedUsingActivity"
+    },
+    "domain" : "12",
+    "attributes" : [ "object", "external" ],
+    "id" : "243"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadRole",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -11371,58 +11409,33 @@
       "IRI-based" : "hadRole",
       "undefined" : "hadRole"
     },
-    "domain" : "186",
+    "domain" : "184",
     "comment" : {
       "en" : "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ].",
       "undefined" : "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "231"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#qualifiedUsingActivity",
-    "inverse" : "93",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "qualifiedUsingActivity",
-      "undefined" : "qualifiedUsingActivity"
-    },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "242"
+    "attributes" : [ "object", "external" ],
+    "id" : "232"
   }, {
     "range" : "52",
     "domain" : "76",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "243"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedAssociationOf",
-    "inverse" : "200",
+    "inverse" : "198",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -11430,39 +11443,39 @@
       "IRI-based" : "qualifiedAssociationOf",
       "undefined" : "qualifiedAssociationOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "244"
-  }, {
-    "range" : "52",
-    "domain" : "157",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "87",
+    "attributes" : [ "object", "external" ],
     "id" : "245"
   }, {
-    "range" : "66",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "52",
+    "domain" : "158",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "246"
   }, {
-    "range" : "66",
-    "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "55",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "247"
+  }, {
+    "range" : "55",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
   }, {
     "iri" : "http://www.w3.org/ns/prov#ended",
     "inverse" : "101",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -11470,14 +11483,14 @@
       "IRI-based" : "ended",
       "undefined" : "ended"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "248"
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "249"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasUsedBy",
     "inverse" : "104",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11495,14 +11508,14 @@
       "IRI-based" : "wasUsedBy",
       "undefined" : "wasUsedBy"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "249"
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "250"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedSourceOf",
     "inverse" : "110",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11520,26 +11533,13 @@
       "IRI-based" : "qualifiedSourceOf",
       "undefined" : "qualifiedSourceOf"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "250"
-  }, {
-    "iri" : "http://adaptcentre.ie/consent/voc.owl#ofPurpose",
-    "baseIri" : "http://adaptcentre.ie/consent/voc.owl",
-    "range" : "131",
-    "label" : {
-      "IRI-based" : "ofPurpose"
-    },
-    "domain" : "53",
-    "comment" : {
-      "undefined" : "Refers to the purpose of an inclusion."
-    },
-    "attributes" : [ "functional", "object" ],
+    "domain" : "68",
+    "attributes" : [ "object", "external" ],
     "id" : "251"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedInfluence",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "24",
+    "range" : "1",
     "annotations" : {
       "sharesDefinitionWith" : [ {
         "identifier" : "sharesDefinitionWith",
@@ -11617,28 +11617,28 @@
       "IRI-based" : "qualifiedInfluence",
       "undefined" : "qualifiedInfluence"
     },
-    "domain" : "146",
-    "subproperty" : [ "150", "32", "93", "116", "71", "88", "89", "211", "44", "6", "200", "109", "110" ],
+    "domain" : "2",
+    "subproperty" : [ "150", "34", "89", "115", "71", "84", "85", "212", "45", "10", "198", "109", "110" ],
     "comment" : {
       "en" : "Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "2"
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
   }, {
     "iri" : "http://www.w3.org/ns/prov#informed",
     "inverse" : "106",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "1",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       } ]
     },
@@ -11646,33 +11646,33 @@
       "IRI-based" : "informed",
       "undefined" : "informed"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
     "id" : "252"
   }, {
-    "range" : "66",
-    "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "55",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "253"
   }, {
-    "range" : "112",
+    "range" : "42",
     "domain" : "111",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "254"
   }, {
-    "range" : "24",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "1",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "255"
   }, {
-    "range" : "112",
+    "range" : "42",
     "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "256"
   }, {
-    "range" : "112",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "42",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "257"
   } ]
 }
