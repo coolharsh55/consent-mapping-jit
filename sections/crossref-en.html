@@ -1,0 +1,441 @@
+<h2  id="crossreference" class="list">Cross reference for An Ontology for Consent-aware Mapping Engine for Generating classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by An Ontology for Consent-aware Mapping Engine for Generating.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+      </li>
+      <li>
+         <a href="#l#Consenting_Party"
+            title="http://adaptcentre.ie/consent/voc.owl#Consenting_Party">Consenting Party</a>
+      </li>
+      <li>
+         <a href="#l#Inclusion" title="http://adaptcentre.ie/consent/voc.owl#Inclusion">Inlclusion</a>
+      </li>
+      <li>
+         <a href="#l#Policy" title="http://adaptcentre.ie/consent/voc.owl#Policy">Policy</a>
+      </li>
+      <li>
+         <a href="#l#Purpose" title="http://adaptcentre.ie/consent/voc.owl#Purpose">Purpose</a>
+      </li>
+   </ul>
+   <div class="entity" id="l#Consent">
+      <h3>Consent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#Consent</p>
+      <div class="comment">
+         <span class="markdown">Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a "yes" or a "no". We treat the absence of the predicate isGiven as a "no".</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#l#forInclusion"
+               title="http://adaptcentre.ie/consent/voc.owl#forInclusion">for inclusion</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#l#givenBy" title="http://adaptcentre.ie/consent/voc.owl#givenBy">given by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#l#isGiven" title="http://adaptcentre.ie/consent/voc.owl#isGiven">is given</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#l#registeredOn"
+               title="http://adaptcentre.ie/consent/voc.owl#registeredOn">registered on</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#l#validUntil" title="http://adaptcentre.ie/consent/voc.owl#validUntil">valid until</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#l#Consenting_Party"
+               title="http://adaptcentre.ie/consent/voc.owl#Consenting_Party">Consenting Party</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Inclusion" title="http://adaptcentre.ie/consent/voc.owl#Inclusion">Inlclusion</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Policy" title="http://adaptcentre.ie/consent/voc.owl#Policy">Policy</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Purpose" title="http://adaptcentre.ie/consent/voc.owl#Purpose">Purpose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="l#Consenting_Party">
+      <h3>Consenting Party<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#Consenting_Party</p>
+      <div class="comment">
+         <span class="markdown">Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Organization">organization</span> 
+            <span class="logic">or</span> 
+            <span class="dotted" title="http://www.w3.org/ns/prov#Person">person</span>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Agent">agent</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#l#givenBy" title="http://adaptcentre.ie/consent/voc.owl#givenBy">given by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Inclusion" title="http://adaptcentre.ie/consent/voc.owl#Inclusion">Inlclusion</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Policy" title="http://adaptcentre.ie/consent/voc.owl#Policy">Policy</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Purpose" title="http://adaptcentre.ie/consent/voc.owl#Purpose">Purpose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="l#Inclusion">
+      <h3>Inlclusion<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#Inclusion</p>
+      <div class="comment">
+         <span class="markdown">Inclusion represents the relation between a policy and a purpose.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#l#ofPolicy" title="http://adaptcentre.ie/consent/voc.owl#ofPolicy">of policy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#l#ofPurpose" title="http://adaptcentre.ie/consent/voc.owl#ofPurpose">of purpose</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#l#forInclusion"
+               title="http://adaptcentre.ie/consent/voc.owl#forInclusion">for inclusion</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Consenting_Party"
+               title="http://adaptcentre.ie/consent/voc.owl#Consenting_Party">Consenting Party</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Policy" title="http://adaptcentre.ie/consent/voc.owl#Policy">Policy</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Purpose" title="http://adaptcentre.ie/consent/voc.owl#Purpose">Purpose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="l#Policy">
+      <h3>Policy<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#Policy</p>
+      <div class="comment">
+         <span class="markdown">Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#l#ofPolicy" title="http://adaptcentre.ie/consent/voc.owl#ofPolicy">of policy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Consenting_Party"
+               title="http://adaptcentre.ie/consent/voc.owl#Consenting_Party">Consenting Party</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Inclusion" title="http://adaptcentre.ie/consent/voc.owl#Inclusion">Inlclusion</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Purpose" title="http://adaptcentre.ie/consent/voc.owl#Purpose">Purpose</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="l#Purpose">
+      <h3>Purpose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#Purpose</p>
+      <div class="comment">
+         <span class="markdown">Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#l#ofPurpose" title="http://adaptcentre.ie/consent/voc.owl#ofPurpose">of purpose</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Consenting_Party"
+               title="http://adaptcentre.ie/consent/voc.owl#Consenting_Party">Consenting Party</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Inclusion" title="http://adaptcentre.ie/consent/voc.owl#Inclusion">Inlclusion</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#l#Policy" title="http://adaptcentre.ie/consent/voc.owl#Policy">Policy</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#l#forInclusion"
+            title="http://adaptcentre.ie/consent/voc.owl#forInclusion">
+            <span>for inclusion</span>
+         </a>
+      </li>
+      <li>
+         <a href="#l#givenBy" title="http://adaptcentre.ie/consent/voc.owl#givenBy">
+            <span>given by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#l#ofPolicy" title="http://adaptcentre.ie/consent/voc.owl#ofPolicy">
+            <span>of policy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#l#ofPurpose" title="http://adaptcentre.ie/consent/voc.owl#ofPurpose">
+            <span>of purpose</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="l#forInclusion">
+      <h3>for inclusion<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#forInclusion</p>
+      <div class="comment">
+         <span class="markdown">Indicates the inclusion for which consent was (not) given.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#l#Inclusion" title="http://adaptcentre.ie/consent/voc.owl#Inclusion">Inlclusion</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="l#givenBy">
+      <h3>given by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#givenBy</p>
+      <div class="comment">
+         <span class="markdown">Indicates who has given consent.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#l#Consenting_Party"
+                  title="http://adaptcentre.ie/consent/voc.owl#Consenting_Party">Consenting Party</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="l#ofPolicy">
+      <h3>of policy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#ofPolicy</p>
+      <div class="comment">
+         <span class="markdown">Refers to the policy of an inclusion.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#l#Inclusion" title="http://adaptcentre.ie/consent/voc.owl#Inclusion">Inlclusion</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#l#Policy" title="http://adaptcentre.ie/consent/voc.owl#Policy">Policy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="l#ofPurpose">
+      <h3>of purpose<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#ofPurpose</p>
+      <div class="comment">
+         <span class="markdown">Refers to the purpose of an inclusion.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#l#Inclusion" title="http://adaptcentre.ie/consent/voc.owl#Inclusion">Inlclusion</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#l#Purpose" title="http://adaptcentre.ie/consent/voc.owl#Purpose">Purpose</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#l#isGiven" title="http://adaptcentre.ie/consent/voc.owl#isGiven">
+            <span>is given</span>
+         </a>
+      </li>
+      <li>
+         <a href="#l#registeredOn"
+            title="http://adaptcentre.ie/consent/voc.owl#registeredOn">
+            <span>registered on</span>
+         </a>
+      </li>
+      <li>
+         <a href="#l#validUntil" title="http://adaptcentre.ie/consent/voc.owl#validUntil">
+            <span>valid until</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="l#isGiven">
+      <h3>is given<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#isGiven</p>
+      <div class="comment">
+         <span class="markdown">Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.).</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="l#registeredOn">
+      <h3>registered on<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#registeredOn</p>
+      <div class="comment">
+         <span class="markdown">Indicates when the consent instance was registered.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="l#validUntil">
+      <h3>valid until<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://adaptcentre.ie/consent/voc.owl#validUntil</p>
+      <div class="comment">
+         <span class="markdown">Indicates when consent expires.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#l#Consent" title="http://adaptcentre.ie/consent/voc.owl#Consent">Consent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

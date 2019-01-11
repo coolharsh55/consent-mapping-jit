@@ -1,0 +1,177 @@
+<http://adaptcentre.ie/consent/voc.owl#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://adaptcentre.ie/consent/voc.owl#> <http://www.w3.org/2002/07/owl#versionIRI> <http://adaptcentre.ie/consent/1.0> .
+<http://adaptcentre.ie/consent/voc.owl#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov#> .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/dc/elements/1.1/creator> "Christophe Debruyne" .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/dc/elements/1.1/creator> "Harshvardhan J. Pandit" .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/dc/elements/1.1/description> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time." .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/dc/elements/1.1/title> "Consent Ontology" .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/dc/terms/abstract> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time." .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/dc/terms/created> "2018-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"^^<https://w3.org/2001/XMLSchema#anyURI> .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/dc/terms/publisher> <http://purl.org/adaptcentre/people/ADAPT> .
+<http://adaptcentre.ie/consent/voc.owl#> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/prov#value
+<http://www.w3.org/ns/prov#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://adaptcentre.ie/consent/voc.owl#forInclusion
+<http://adaptcentre.ie/consent/voc.owl#forInclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://adaptcentre.ie/consent/voc.owl#forInclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://adaptcentre.ie/consent/voc.owl#forInclusion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://adaptcentre.ie/consent/voc.owl#Consent> .
+<http://adaptcentre.ie/consent/voc.owl#forInclusion> <http://www.w3.org/2000/01/rdf-schema#range> <http://adaptcentre.ie/consent/voc.owl#Inclusion> .
+<http://adaptcentre.ie/consent/voc.owl#forInclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the inclusion for which consent was (not) given." .
+<http://adaptcentre.ie/consent/voc.owl#forInclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "for inclusion" .
+# 
+# http://adaptcentre.ie/consent/voc.owl#givenBy
+<http://adaptcentre.ie/consent/voc.owl#givenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://adaptcentre.ie/consent/voc.owl#givenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://adaptcentre.ie/consent/voc.owl#givenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://adaptcentre.ie/consent/voc.owl#Consent> .
+<http://adaptcentre.ie/consent/voc.owl#givenBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://adaptcentre.ie/consent/voc.owl#Consenting_Party> .
+<http://adaptcentre.ie/consent/voc.owl#givenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates who has given consent." .
+<http://adaptcentre.ie/consent/voc.owl#givenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "given by" .
+# 
+# http://adaptcentre.ie/consent/voc.owl#ofPolicy
+<http://adaptcentre.ie/consent/voc.owl#ofPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://adaptcentre.ie/consent/voc.owl#ofPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://adaptcentre.ie/consent/voc.owl#ofPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://adaptcentre.ie/consent/voc.owl#Inclusion> .
+<http://adaptcentre.ie/consent/voc.owl#ofPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <http://adaptcentre.ie/consent/voc.owl#Policy> .
+<http://adaptcentre.ie/consent/voc.owl#ofPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the policy of an inclusion." .
+<http://adaptcentre.ie/consent/voc.owl#ofPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "of policy" .
+# 
+# http://adaptcentre.ie/consent/voc.owl#ofPurpose
+<http://adaptcentre.ie/consent/voc.owl#ofPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://adaptcentre.ie/consent/voc.owl#ofPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://adaptcentre.ie/consent/voc.owl#ofPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://adaptcentre.ie/consent/voc.owl#Inclusion> .
+<http://adaptcentre.ie/consent/voc.owl#ofPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://adaptcentre.ie/consent/voc.owl#Purpose> .
+<http://adaptcentre.ie/consent/voc.owl#ofPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the purpose of an inclusion." .
+<http://adaptcentre.ie/consent/voc.owl#ofPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "of purpose" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://adaptcentre.ie/consent/voc.owl#isGiven
+<http://adaptcentre.ie/consent/voc.owl#isGiven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://adaptcentre.ie/consent/voc.owl#isGiven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://adaptcentre.ie/consent/voc.owl#isGiven> <http://www.w3.org/2000/01/rdf-schema#domain> <http://adaptcentre.ie/consent/voc.owl#Consent> .
+<http://adaptcentre.ie/consent/voc.owl#isGiven> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://adaptcentre.ie/consent/voc.owl#isGiven> <http://www.w3.org/2000/01/rdf-schema#comment> "Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.)." .
+# 
+# http://adaptcentre.ie/consent/voc.owl#registeredOn
+<http://adaptcentre.ie/consent/voc.owl#registeredOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://adaptcentre.ie/consent/voc.owl#registeredOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://adaptcentre.ie/consent/voc.owl#registeredOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://adaptcentre.ie/consent/voc.owl#Consent> .
+<http://adaptcentre.ie/consent/voc.owl#registeredOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://adaptcentre.ie/consent/voc.owl#registeredOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates when the consent instance was registered." .
+# 
+# http://adaptcentre.ie/consent/voc.owl#validUntil
+<http://adaptcentre.ie/consent/voc.owl#validUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://adaptcentre.ie/consent/voc.owl#validUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://adaptcentre.ie/consent/voc.owl#validUntil> <http://www.w3.org/2000/01/rdf-schema#domain> <http://adaptcentre.ie/consent/voc.owl#Consent> .
+<http://adaptcentre.ie/consent/voc.owl#validUntil> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://adaptcentre.ie/consent/voc.owl#validUntil> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates when consent expires." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://adaptcentre.ie/consent/voc.owl#Consent
+<http://adaptcentre.ie/consent/voc.owl#Consent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://adaptcentre.ie/consent/voc.owl#Consent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://adaptcentre.ie/consent/voc.owl#Consent> <http://www.w3.org/2000/01/rdf-schema#comment> "Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a \"yes\" or a \"no\". We treat the absence of the predicate isGiven as a \"no\"." .
+<http://adaptcentre.ie/consent/voc.owl#Consent> <http://www.w3.org/2000/01/rdf-schema#label> "Consent" .
+# 
+# http://adaptcentre.ie/consent/voc.owl#Consenting_Party
+<http://adaptcentre.ie/consent/voc.owl#Consenting_Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://adaptcentre.ie/consent/voc.owl#Consenting_Party> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Organization> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Person> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://adaptcentre.ie/consent/voc.owl#Consenting_Party> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://adaptcentre.ie/consent/voc.owl#Consenting_Party> <http://www.w3.org/2000/01/rdf-schema#comment> "Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization." .
+<http://adaptcentre.ie/consent/voc.owl#Consenting_Party> <http://www.w3.org/2000/01/rdf-schema#label> "Consenting Party" .
+# 
+# http://adaptcentre.ie/consent/voc.owl#Inclusion
+<http://adaptcentre.ie/consent/voc.owl#Inclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://adaptcentre.ie/consent/voc.owl#Inclusion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://adaptcentre.ie/consent/voc.owl#Inclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "Inclusion represents the relation between a policy and a purpose." .
+<http://adaptcentre.ie/consent/voc.owl#Inclusion> <http://www.w3.org/2000/01/rdf-schema#label> "Inlclusion" .
+# 
+# http://adaptcentre.ie/consent/voc.owl#Policy
+<http://adaptcentre.ie/consent/voc.owl#Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://adaptcentre.ie/consent/voc.owl#Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://adaptcentre.ie/consent/voc.owl#Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data." .
+<http://adaptcentre.ie/consent/voc.owl#Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Policy" .
+# 
+# http://adaptcentre.ie/consent/voc.owl#Purpose
+<http://adaptcentre.ie/consent/voc.owl#Purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://adaptcentre.ie/consent/voc.owl#Purpose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://adaptcentre.ie/consent/voc.owl#Purpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one\u2019s profile and purchase history for targeted advertising." .
+<http://adaptcentre.ie/consent/voc.owl#Purpose> <http://www.w3.org/2000/01/rdf-schema#label> "Purpose" .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid4 <http://www.w3.org/2002/07/owl#members> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://adaptcentre.ie/consent/voc.owl#Consent> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://adaptcentre.ie/consent/voc.owl#Consenting_Party> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://adaptcentre.ie/consent/voc.owl#Inclusion> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://adaptcentre.ie/consent/voc.owl#Policy> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://adaptcentre.ie/consent/voc.owl#Purpose> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

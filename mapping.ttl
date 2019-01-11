@@ -1,0 +1,107 @@
+@base <http://data.example.com/> .
+
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix ont: <http://adaptcentre.ie/consent/voc.owl#> .
+
+<#PurposeTM>
+	rr:logicalTable [ rr:tableName "Purpose" ] ;
+	rr:subjectMap [
+		rr:template "http://data.example.com/purpose/{id}" ;
+		rr:class ont:Puropose ;
+		rr:class prov:Entity ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [ rr:column "description" ] ;
+	] .
+	
+<#UserTM>
+	rr:logicalTable [ rr:tableName "User" ] ;
+	rr:subjectMap [
+		rr:template "http://data.example.com/user/{id}" ;
+		rr:class ont:Consenting_Party ;
+		rr:class prov:Agent ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate foaf:mbox ;
+		rr:objectMap [ rr:template "mailto:{email}" ; rr:termType rr:IRI ; ] ;
+	] .
+	
+<#PolicyTM>
+	rr:logicalTable [ rr:sqlQuery "SELECT *, DATE_FORMAT(dateGenerated, '%Y-%m-%dT%H:%i:%s') AS dateGenerated FROM Policy WHERE isPublished" ] ;
+	rr:subjectMap [
+		rr:template "http://data.example.com/policy/{id}" ;
+		rr:class ont:Policy ;
+		rr:class prov:Entity ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [ rr:template "Policy of {system} (v{version})" ; rr:termType rr:Literal ; ] ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate prov:wasRevisionOf ;
+		rr:objectMap [ rr:template "http://data.example.com/policy/{oldVersion_id}" ; rr:termType rr:IRI ; ] ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate dcterms:created ;
+		rr:objectMap [ rr:column "dateGenerated" ; rr:datatype xsd:dateTime ; ] ;
+	] .
+	
+<#InclusionTM>
+	rr:logicalTable [ rr:sqlQuery "SELECT i.* FROM Inclusion i INNER JOIN Policy p ON i.policy_id = p.id WHERE p.isPublished" ] ;
+	rr:subjectMap [
+		rr:template "http://data.example.com/inclusion/{id}" ;
+		rr:class ont:Inclusion ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate ont:ofPolicy ;
+		rr:objectMap [ rr:template "http://data.example.com/policy/{policy_id}" ; rr:termType rr:IRI ; ] ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate ont:ofPurpose ;
+		rr:objectMap [ rr:template "http://data.example.com/purpose/{purpose_id}" ; rr:termType rr:IRI ; ] ;
+	] .
+	
+<#ConsentTM>
+	rr:logicalTable [ rr:sqlQuery """SELECT *, 
+											DATE_FORMAT(registeredOn, '%Y-%m-%dT%H:%i:%s') AS registeredOn, 
+											DATE_FORMAT(validUntil, '%Y-%m-%dT%H:%i:%s') AS validUntil,
+											(status = 0) AS isGiven FROM Consent""" ] ;
+	rr:subjectMap [
+		rr:template "http://data.example.com/consent/{id}" ;
+		rr:class ont:Consent ;
+		rr:class prov:Entity ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate ont:registeredOn ;
+		rr:objectMap [ rr:column "registeredOn" ; rr:datatype xsd:dateTime ; ] ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate ont:validUntil ;
+		rr:objectMap [ rr:column "validUntil" ; rr:datatype xsd:dateTime ; ] ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate ont:givenBy ;
+		rr:predicate prov:wasAttributedTo ;
+		rr:objectMap [ rr:template "http://data.example.com/user/{user_id}" ; rr:termType rr:IRI ; ] ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate ont:forInclusion ;
+		rr:objectMap [ rr:template "http://data.example.com/inclusion/{inclusion_id}" ; rr:termType rr:IRI ; ] ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate prov:wasRevisionOf ;
+		rr:objectMap [ rr:template "http://data.example.com/consent/{oldVersion_id}" ; rr:termType rr:IRI ; ] ;
+	] ;
+	rr:predicateObjectMap [
+		rr:predicate ont:isGiven ;
+		rr:objectMap [ rr:column "isGiven" ; rr:datatype xsd:boolean ; ] ;
+	] .

@@ -1,0 +1,24 @@
+<h2 id="desc" class="list">An Ontology for Consent-aware Mapping Engine for Generating: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The model we propose in this paper is a revision of a model (see [5]) first proposed to demonstrate the use of semantic technologies for engaging with the informed consent that an organization has gathered. While fit for the purpose for the sake of the demonstrator reported, the model in [5] has several shortcomings; there is an apparent disconnect between various classes (lack of context) and there is no explicit notion that policies (or terms and conditions) and consent will evolve over time.
+
+![model](images/concepts.png)
+
+With those limitations in mind, we propose a new model, with our conceptualization being captured using the Object Role Modelling (ORM) notation [6] (see Fig. 1). Unlike UML class diagrams where classes can have attributes and associations, ORM is a fact-oriented approach where all relations between object-types (i.e. “classes”) are expressed in a similar fashion. In Fig. 1, all relations are binary, which means there are two roles (represented by the smaller rectangles) for each relation. Each role can only be played by exactly one object-type. We will now describe the different concepts and the constraints on their roles (depicted in magenta).
+
+### Policy and Purpose
+ * Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data.
+ * Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising. While policies may change over time, a purpose does not. Any change in the description of a purpose results in a new purpose. One can thus see ``description'' as the conceptual identifier for purposes.
+ * Inclusion represents the relation between a policy and a purpose. Note that the roles that Inclusion plays with Policy and Purpose are both mandatory (represented by the dot) and unique (represented by the line above the role box). While an inclusion must have exactly 1 policy and must have exactly one purpose, a policy may have 1 or more inclusions and a purpose may be the subject of one or more inclusions. The external uniqueness constraint (a circle with a line) connects all the roles that identify an instance of an object type. Here, each combination of a policy and a purpose identifies an inclusion.
+
+![prov-o](images/prov.png)
+
+Our model reuses the provenance ontology PROV-O [4] (see the left hand side of Fig. 2) by specializing some of its concepts. We state policy and purpose to be subtypes of prov:Entity, which allows us to reuse predicates such as prov:wasRevisionOf. This predicate allows us to formulate a query returning all parties who have not yet given their consent (or not) to a revision of a policy.
+
+### Consent
+ * Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a "yes" or a "no". Note the unary role “is given” that Consent can play. When an instance of Consent plays that role, then consent was given. When an instance of consent exists and does not play that role, then that means the consenting party has not given the permission for their data to be used for a particular purpose.  The absence of a consent instance, if that were to happen, is interpreted as a "no". Treating the absence of information as being false1 information corresponds roughly to a closed world interpretation of the data.
+ * Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. Such agents can be natural and legal persons, and even computer-based systems.
+ * Date and Time are used to capture when consent was given. Together with the inclusion for which a consent needs to be captured and the consenting party, the three attributes are used to identify an instance of consent. By including the date and time on which it was captured, we can easily store and process information in case consent needs to be requested on regular interval.
+ 
+Again, the concepts we introduced in this section specialize classes in PROV-O. A consenting party corresponds with prov:Agent, and consent is a specialization of prov:Entity. The latter allows one to capture revisions of consent if that were to take place (e.g., opting out).
+</span>
