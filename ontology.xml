@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://adaptcentre.ie/consent/voc#"
-     xml:base="http://adaptcentre.ie/consent/voc"
+<rdf:RDF xmlns="https://w3id.org/consent-mapping-jit#"
+     xml:base="https://w3id.org/consent-mapping-jit"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,8 +11,8 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://adaptcentre.ie/consent/voc#">
-        <owl:versionIRI rdf:resource="http://adaptcentre.ie/consent/1.0/voc#"/>
+    <owl:Ontology rdf:about="https://w3id.org/consent-mapping-jit#">
+        <owl:versionIRI rdf:resource="https://w3id.org/consent-mapping-jit/v/1.0#"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
         <dc:creator>Christophe Debruyne</dc:creator>
         <dc:creator>Harshvardhan J. Pandit</dc:creator>
@@ -58,52 +58,52 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#forInclusion -->
+    <!-- https://w3id.org/consent-mapping-jit#forInclusion -->
 
 
-    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc#forInclusion">
+    <owl:ObjectProperty rdf:about="https://w3id.org/consent-mapping-jit#forInclusion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
-        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc#Inclusion"/>
+        <rdfs:domain rdf:resource="https://w3id.org/consent-mapping-jit#Consent"/>
+        <rdfs:range rdf:resource="https://w3id.org/consent-mapping-jit#Inclusion"/>
         <rdfs:comment>Indicates the inclusion for which consent was (not) given.</rdfs:comment>
         <rdfs:comment>for inclusion</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#givenBy -->
+    <!-- https://w3id.org/consent-mapping-jit#givenBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc#givenBy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/consent-mapping-jit#givenBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
-        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc#Consenting_Party"/>
+        <rdfs:domain rdf:resource="https://w3id.org/consent-mapping-jit#Consent"/>
+        <rdfs:range rdf:resource="https://w3id.org/consent-mapping-jit#Consenting_Party"/>
         <rdfs:comment>Indicates who has given consent.</rdfs:comment>
         <rdfs:comment>given by</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#ofPolicy -->
+    <!-- https://w3id.org/consent-mapping-jit#ofPolicy -->
 
 
-    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc#ofPolicy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/consent-mapping-jit#ofPolicy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Inclusion"/>
-        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc#Policy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/consent-mapping-jit#Inclusion"/>
+        <rdfs:range rdf:resource="https://w3id.org/consent-mapping-jit#Policy"/>
         <rdfs:comment>Refers to the policy of an inclusion.</rdfs:comment>
         <rdfs:comment>of policy</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#ofPurpose -->
+    <!-- https://w3id.org/consent-mapping-jit#ofPurpose -->
 
 
-    <owl:ObjectProperty rdf:about="http://adaptcentre.ie/consent/voc#ofPurpose">
+    <owl:ObjectProperty rdf:about="https://w3id.org/consent-mapping-jit#ofPurpose">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Inclusion"/>
-        <rdfs:range rdf:resource="http://adaptcentre.ie/consent/voc#Purpose"/>
+        <rdfs:domain rdf:resource="https://w3id.org/consent-mapping-jit#Inclusion"/>
+        <rdfs:range rdf:resource="https://w3id.org/consent-mapping-jit#Purpose"/>
         <rdfs:comment>Refers to the purpose of an inclusion.</rdfs:comment>
         <rdfs:comment>of purpose</rdfs:comment>
     </owl:ObjectProperty>
@@ -122,36 +122,36 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#isGiven -->
+    <!-- https://w3id.org/consent-mapping-jit#isGiven -->
 
 
-    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc#isGiven">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/consent-mapping-jit#isGiven">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/consent-mapping-jit#Consent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#registeredOn -->
+    <!-- https://w3id.org/consent-mapping-jit#registeredOn -->
 
 
-    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc#registeredOn">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/consent-mapping-jit#registeredOn">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/consent-mapping-jit#Consent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>Indicates when the consent instance was registered.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#validUntil -->
+    <!-- https://w3id.org/consent-mapping-jit#validUntil -->
 
 
-    <owl:DatatypeProperty rdf:about="http://adaptcentre.ie/consent/voc#validUntil">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/consent-mapping-jit#validUntil">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://adaptcentre.ie/consent/voc#Consent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/consent-mapping-jit#Consent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>Indicates when consent expires.</rdfs:comment>
     </owl:DatatypeProperty>
@@ -170,10 +170,24 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#Consent -->
+    <!-- http://www.w3.org/ns/prov#Agent -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Consent">
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- https://w3id.org/consent-mapping-jit#Consent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/consent-mapping-jit#Consent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a &quot;yes&quot; or a &quot;no&quot;. We treat the absence of the predicate isGiven as a &quot;no&quot;.</rdfs:comment>
         <rdfs:label>Consent</rdfs:label>
@@ -181,10 +195,10 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#Consenting_Party -->
+    <!-- https://w3id.org/consent-mapping-jit#Consenting_Party -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Consenting_Party">
+    <owl:Class rdf:about="https://w3id.org/consent-mapping-jit#Consenting_Party">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -200,10 +214,10 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#Inclusion -->
+    <!-- https://w3id.org/consent-mapping-jit#Inclusion -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Inclusion">
+    <owl:Class rdf:about="https://w3id.org/consent-mapping-jit#Inclusion">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Inclusion represents the relation between a policy and a purpose.</rdfs:comment>
         <rdfs:label>Inlclusion</rdfs:label>
@@ -211,10 +225,10 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#Policy -->
+    <!-- https://w3id.org/consent-mapping-jit#Policy -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Policy">
+    <owl:Class rdf:about="https://w3id.org/consent-mapping-jit#Policy">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data.</rdfs:comment>
         <rdfs:label>Policy</rdfs:label>
@@ -222,28 +236,14 @@
     
 
 
-    <!-- http://adaptcentre.ie/consent/voc#Purpose -->
+    <!-- https://w3id.org/consent-mapping-jit#Purpose -->
 
 
-    <owl:Class rdf:about="http://adaptcentre.ie/consent/voc#Purpose">
+    <owl:Class rdf:about="https://w3id.org/consent-mapping-jit#Purpose">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising.</rdfs:comment>
         <rdfs:label>Purpose</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Agent -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Entity -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
     
 
 
@@ -259,11 +259,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Consent"/>
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Consenting_Party"/>
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Inclusion"/>
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Policy"/>
-            <rdf:Description rdf:about="http://adaptcentre.ie/consent/voc#Purpose"/>
+            <rdf:Description rdf:about="https://w3id.org/consent-mapping-jit#Consent"/>
+            <rdf:Description rdf:about="https://w3id.org/consent-mapping-jit#Consenting_Party"/>
+            <rdf:Description rdf:about="https://w3id.org/consent-mapping-jit#Inclusion"/>
+            <rdf:Description rdf:about="https://w3id.org/consent-mapping-jit#Policy"/>
+            <rdf:Description rdf:about="https://w3id.org/consent-mapping-jit#Purpose"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

@@ -13,19 +13,28 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "http://adaptcentre.ie/consent/voc#Consent"
+      "@id" : "https://w3id.org/consent-mapping-jit#Consent"
     }, {
-      "@id" : "http://adaptcentre.ie/consent/voc#Consenting_Party"
+      "@id" : "https://w3id.org/consent-mapping-jit#Consenting_Party"
     }, {
-      "@id" : "http://adaptcentre.ie/consent/voc#Inclusion"
+      "@id" : "https://w3id.org/consent-mapping-jit#Inclusion"
     }, {
-      "@id" : "http://adaptcentre.ie/consent/voc#Policy"
+      "@id" : "https://w3id.org/consent-mapping-jit#Policy"
     }, {
-      "@id" : "http://adaptcentre.ie/consent/voc#Purpose"
+      "@id" : "https://w3id.org/consent-mapping-jit#Purpose"
     } ]
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#",
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/consent-mapping-jit#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Christophe Debruyne"
@@ -59,10 +68,10 @@
     "@id" : "http://www.w3.org/ns/prov#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://adaptcentre.ie/consent/1.0/voc#"
+    "@id" : "https://w3id.org/consent-mapping-jit/v/1.0#"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#Consent",
+  "@id" : "https://w3id.org/consent-mapping-jit#Consent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a \"yes\" or a \"no\". We treat the absence of the predicate isGiven as a \"no\"."
@@ -74,7 +83,7 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#Consenting_Party",
+  "@id" : "https://w3id.org/consent-mapping-jit#Consenting_Party",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization."
@@ -89,7 +98,7 @@
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#Inclusion",
+  "@id" : "https://w3id.org/consent-mapping-jit#Inclusion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inclusion represents the relation between a policy and a purpose."
@@ -101,7 +110,7 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#Policy",
+  "@id" : "https://w3id.org/consent-mapping-jit#Policy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data."
@@ -113,7 +122,7 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#Purpose",
+  "@id" : "https://w3id.org/consent-mapping-jit#Purpose",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising."
@@ -125,7 +134,7 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#forInclusion",
+  "@id" : "https://w3id.org/consent-mapping-jit#forInclusion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Indicates the inclusion for which consent was (not) given."
@@ -133,13 +142,13 @@
     "@value" : "for inclusion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Consent"
+    "@id" : "https://w3id.org/consent-mapping-jit#Consent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Inclusion"
+    "@id" : "https://w3id.org/consent-mapping-jit#Inclusion"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#givenBy",
+  "@id" : "https://w3id.org/consent-mapping-jit#givenBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Indicates who has given consent."
@@ -147,25 +156,25 @@
     "@value" : "given by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Consent"
+    "@id" : "https://w3id.org/consent-mapping-jit#Consent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Consenting_Party"
+    "@id" : "https://w3id.org/consent-mapping-jit#Consenting_Party"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#isGiven",
+  "@id" : "https://w3id.org/consent-mapping-jit#isGiven",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Consent"
+    "@id" : "https://w3id.org/consent-mapping-jit#Consent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#ofPolicy",
+  "@id" : "https://w3id.org/consent-mapping-jit#ofPolicy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Refers to the policy of an inclusion."
@@ -173,13 +182,13 @@
     "@value" : "of policy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Inclusion"
+    "@id" : "https://w3id.org/consent-mapping-jit#Inclusion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Policy"
+    "@id" : "https://w3id.org/consent-mapping-jit#Policy"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#ofPurpose",
+  "@id" : "https://w3id.org/consent-mapping-jit#ofPurpose",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Refers to the purpose of an inclusion."
@@ -187,42 +196,33 @@
     "@value" : "of purpose"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Inclusion"
+    "@id" : "https://w3id.org/consent-mapping-jit#Inclusion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Purpose"
+    "@id" : "https://w3id.org/consent-mapping-jit#Purpose"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#registeredOn",
+  "@id" : "https://w3id.org/consent-mapping-jit#registeredOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Indicates when the consent instance was registered."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Consent"
+    "@id" : "https://w3id.org/consent-mapping-jit#Consent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://adaptcentre.ie/consent/voc#validUntil",
+  "@id" : "https://w3id.org/consent-mapping-jit#validUntil",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Indicates when consent expires."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://adaptcentre.ie/consent/voc#Consent"
+    "@id" : "https://w3id.org/consent-mapping-jit#Consent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#Entity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#value",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

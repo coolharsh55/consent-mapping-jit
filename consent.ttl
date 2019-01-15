@@ -4,20 +4,20 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://adaptcentre.ie/consent/voc#> .
+@base <https://w3id.org/consent-mapping-jit#> .
 
-<http://adaptcentre.ie/consent/voc#> rdf:type owl:Ontology ;
-                                      owl:versionIRI <http://adaptcentre.ie/consent/1.0/voc#> ;
-                                      owl:imports <http://www.w3.org/ns/prov#> ;
-                                      <http://purl.org/dc/elements/1.1/creator> "Christophe Debruyne"^^xsd:string ;
-                                      <http://purl.org/dc/terms/abstract> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time."^^xsd:string ;
-                                      <http://purl.org/dc/elements/1.1/title> "Consent Ontology"^^xsd:string ;
-                                      <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
-                                      <http://purl.org/dc/elements/1.1/creator> "Harshvardhan J. Pandit"^^xsd:string ;
-                                      <http://purl.org/dc/terms/created> "2018-08-24"^^xsd:date ;
-                                      <http://purl.org/dc/terms/publisher> <http://purl.org/adaptcentre/people/ADAPT> ;
-                                      <http://purl.org/dc/elements/1.1/description> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time."^^xsd:string ;
-                                      <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"^^<https://w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/consent-mapping-jit#> rdf:type owl:Ontology ;
+                                         owl:versionIRI <https://w3id.org/consent-mapping-jit/v/1.0#> ;
+                                         owl:imports <http://www.w3.org/ns/prov#> ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Christophe Debruyne"^^xsd:string ;
+                                         <http://purl.org/dc/terms/abstract> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time."^^xsd:string ;
+                                         <http://purl.org/dc/elements/1.1/title> "Consent Ontology"^^xsd:string ;
+                                         <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Harshvardhan J. Pandit"^^xsd:string ;
+                                         <http://purl.org/dc/terms/created> "2018-08-24"^^xsd:date ;
+                                         <http://purl.org/dc/terms/publisher> <http://purl.org/adaptcentre/people/ADAPT> ;
+                                         <http://purl.org/dc/elements/1.1/description> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time."^^xsd:string ;
+                                         <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"^^<https://w3.org/2001/XMLSchema#anyURI> .
 
 #################################################################
 #    Annotation properties
@@ -31,113 +31,73 @@
 #    Object Properties
 #################################################################
 
-###  http://adaptcentre.ie/consent/voc#forInclusion
-<http://adaptcentre.ie/consent/voc#forInclusion> rdf:type owl:ObjectProperty ,
+###  https://w3id.org/consent-mapping-jit#forInclusion
+<https://w3id.org/consent-mapping-jit#forInclusion> rdf:type owl:ObjectProperty ,
+                                                             owl:FunctionalProperty ;
+                                                    rdfs:domain <https://w3id.org/consent-mapping-jit#Consent> ;
+                                                    rdfs:range <https://w3id.org/consent-mapping-jit#Inclusion> ;
+                                                    rdfs:comment "Indicates the inclusion for which consent was (not) given."^^xsd:string ,
+                                                                 "for inclusion"^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#givenBy
+<https://w3id.org/consent-mapping-jit#givenBy> rdf:type owl:ObjectProperty ,
+                                                        owl:FunctionalProperty ;
+                                               rdfs:domain <https://w3id.org/consent-mapping-jit#Consent> ;
+                                               rdfs:range <https://w3id.org/consent-mapping-jit#Consenting_Party> ;
+                                               rdfs:comment "Indicates who has given consent."^^xsd:string ,
+                                                            "given by"^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#ofPolicy
+<https://w3id.org/consent-mapping-jit#ofPolicy> rdf:type owl:ObjectProperty ,
+                                                         owl:FunctionalProperty ;
+                                                rdfs:domain <https://w3id.org/consent-mapping-jit#Inclusion> ;
+                                                rdfs:range <https://w3id.org/consent-mapping-jit#Policy> ;
+                                                rdfs:comment "Refers to the policy of an inclusion."^^xsd:string ,
+                                                             "of policy"^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#ofPurpose
+<https://w3id.org/consent-mapping-jit#ofPurpose> rdf:type owl:ObjectProperty ,
                                                           owl:FunctionalProperty ;
-                                                 rdfs:domain <http://adaptcentre.ie/consent/voc#Consent> ;
-                                                 rdfs:range <http://adaptcentre.ie/consent/voc#Inclusion> ;
-                                                 rdfs:comment "Indicates the inclusion for which consent was (not) given."^^xsd:string ,
-                                                              "for inclusion"^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#givenBy
-<http://adaptcentre.ie/consent/voc#givenBy> rdf:type owl:ObjectProperty ,
-                                                     owl:FunctionalProperty ;
-                                            rdfs:domain <http://adaptcentre.ie/consent/voc#Consent> ;
-                                            rdfs:range <http://adaptcentre.ie/consent/voc#Consenting_Party> ;
-                                            rdfs:comment "Indicates who has given consent."^^xsd:string ,
-                                                         "given by"^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#ofPolicy
-<http://adaptcentre.ie/consent/voc#ofPolicy> rdf:type owl:ObjectProperty ,
-                                                      owl:FunctionalProperty ;
-                                             rdfs:domain <http://adaptcentre.ie/consent/voc#Inclusion> ;
-                                             rdfs:range <http://adaptcentre.ie/consent/voc#Policy> ;
-                                             rdfs:comment "Refers to the policy of an inclusion."^^xsd:string ,
-                                                          "of policy"^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#ofPurpose
-<http://adaptcentre.ie/consent/voc#ofPurpose> rdf:type owl:ObjectProperty ,
-                                                       owl:FunctionalProperty ;
-                                              rdfs:domain <http://adaptcentre.ie/consent/voc#Inclusion> ;
-                                              rdfs:range <http://adaptcentre.ie/consent/voc#Purpose> ;
-                                              rdfs:comment "Refers to the purpose of an inclusion."^^xsd:string ,
-                                                           "of purpose"^^xsd:string .
+                                                 rdfs:domain <https://w3id.org/consent-mapping-jit#Inclusion> ;
+                                                 rdfs:range <https://w3id.org/consent-mapping-jit#Purpose> ;
+                                                 rdfs:comment "Refers to the purpose of an inclusion."^^xsd:string ,
+                                                              "of purpose"^^xsd:string .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://adaptcentre.ie/consent/voc#isGiven
-<http://adaptcentre.ie/consent/voc#isGiven> rdf:type owl:DatatypeProperty ,
-                                                     owl:FunctionalProperty ;
-                                            rdfs:domain <http://adaptcentre.ie/consent/voc#Consent> ;
-                                            rdfs:range xsd:boolean ;
-                                            rdfs:comment "Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.)."^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#registeredOn
-<http://adaptcentre.ie/consent/voc#registeredOn> rdf:type owl:DatatypeProperty ,
-                                                          owl:FunctionalProperty ;
-                                                 rdfs:domain <http://adaptcentre.ie/consent/voc#Consent> ;
-                                                 rdfs:range xsd:dateTime ;
-                                                 rdfs:comment "Indicates when the consent instance was registered."^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#validUntil
-<http://adaptcentre.ie/consent/voc#validUntil> rdf:type owl:DatatypeProperty ,
+###  https://w3id.org/consent-mapping-jit#isGiven
+<https://w3id.org/consent-mapping-jit#isGiven> rdf:type owl:DatatypeProperty ,
                                                         owl:FunctionalProperty ;
-                                               rdfs:domain <http://adaptcentre.ie/consent/voc#Consent> ;
-                                               rdfs:range xsd:dateTime ;
-                                               rdfs:comment "Indicates when consent expires."^^xsd:string .
+                                               rdfs:domain <https://w3id.org/consent-mapping-jit#Consent> ;
+                                               rdfs:range xsd:boolean ;
+                                               rdfs:comment "Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.)."^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#registeredOn
+<https://w3id.org/consent-mapping-jit#registeredOn> rdf:type owl:DatatypeProperty ,
+                                                             owl:FunctionalProperty ;
+                                                    rdfs:domain <https://w3id.org/consent-mapping-jit#Consent> ;
+                                                    rdfs:range xsd:dateTime ;
+                                                    rdfs:comment "Indicates when the consent instance was registered."^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#validUntil
+<https://w3id.org/consent-mapping-jit#validUntil> rdf:type owl:DatatypeProperty ,
+                                                           owl:FunctionalProperty ;
+                                                  rdfs:domain <https://w3id.org/consent-mapping-jit#Consent> ;
+                                                  rdfs:range xsd:dateTime ;
+                                                  rdfs:comment "Indicates when consent expires."^^xsd:string .
 
 
 #################################################################
 #    Classes
 #################################################################
-
-###  http://adaptcentre.ie/consent/voc#Consent
-<http://adaptcentre.ie/consent/voc#Consent> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                            rdfs:comment "Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a \"yes\" or a \"no\". We treat the absence of the predicate isGiven as a \"no\"."^^xsd:string ;
-                                            rdfs:label "Consent"^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#Consenting_Party
-<http://adaptcentre.ie/consent/voc#Consenting_Party> rdf:type owl:Class ;
-                                                     owl:equivalentClass [ rdf:type owl:Class ;
-                                                                           owl:unionOf ( <http://www.w3.org/ns/prov#Organization>
-                                                                                         <http://www.w3.org/ns/prov#Person>
-                                                                                       )
-                                                                         ] ;
-                                                     rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
-                                                     rdfs:comment "Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization."^^xsd:string ;
-                                                     rdfs:label "Consenting Party"^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#Inclusion
-<http://adaptcentre.ie/consent/voc#Inclusion> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                              rdfs:comment "Inclusion represents the relation between a policy and a purpose."^^xsd:string ;
-                                              rdfs:label "Inlclusion"^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#Policy
-<http://adaptcentre.ie/consent/voc#Policy> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                           rdfs:comment "Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data."^^xsd:string ;
-                                           rdfs:label "Policy"^^xsd:string .
-
-
-###  http://adaptcentre.ie/consent/voc#Purpose
-<http://adaptcentre.ie/consent/voc#Purpose> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                            rdfs:comment "Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising."^^xsd:string ;
-                                            rdfs:label "Purpose"^^xsd:string .
-
 
 ###  http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
@@ -147,16 +107,56 @@
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
 
 
+###  https://w3id.org/consent-mapping-jit#Consent
+<https://w3id.org/consent-mapping-jit#Consent> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                               rdfs:comment "Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a \"yes\" or a \"no\". We treat the absence of the predicate isGiven as a \"no\"."^^xsd:string ;
+                                               rdfs:label "Consent"^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#Consenting_Party
+<https://w3id.org/consent-mapping-jit#Consenting_Party> rdf:type owl:Class ;
+                                                        owl:equivalentClass [ rdf:type owl:Class ;
+                                                                              owl:unionOf ( <http://www.w3.org/ns/prov#Organization>
+                                                                                            <http://www.w3.org/ns/prov#Person>
+                                                                                          )
+                                                                            ] ;
+                                                        rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
+                                                        rdfs:comment "Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization."^^xsd:string ;
+                                                        rdfs:label "Consenting Party"^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#Inclusion
+<https://w3id.org/consent-mapping-jit#Inclusion> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                                 rdfs:comment "Inclusion represents the relation between a policy and a purpose."^^xsd:string ;
+                                                 rdfs:label "Inlclusion"^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#Policy
+<https://w3id.org/consent-mapping-jit#Policy> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                              rdfs:comment "Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data."^^xsd:string ;
+                                              rdfs:label "Policy"^^xsd:string .
+
+
+###  https://w3id.org/consent-mapping-jit#Purpose
+<https://w3id.org/consent-mapping-jit#Purpose> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                               rdfs:comment "Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising."^^xsd:string ;
+                                               rdfs:label "Purpose"^^xsd:string .
+
+
 #################################################################
 #    General axioms
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://adaptcentre.ie/consent/voc#Consent>
-                <http://adaptcentre.ie/consent/voc#Consenting_Party>
-                <http://adaptcentre.ie/consent/voc#Inclusion>
-                <http://adaptcentre.ie/consent/voc#Policy>
-                <http://adaptcentre.ie/consent/voc#Purpose>
+  owl:members ( <https://w3id.org/consent-mapping-jit#Consent>
+                <https://w3id.org/consent-mapping-jit#Consenting_Party>
+                <https://w3id.org/consent-mapping-jit#Inclusion>
+                <https://w3id.org/consent-mapping-jit#Policy>
+                <https://w3id.org/consent-mapping-jit#Purpose>
               )
 ] .
 
