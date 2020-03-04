@@ -1,34 +1,78 @@
-<html><h2 id="crossreference" class="list">Cross reference for Consent classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Consent.
+<h2  id="crossreference" class="list">Cross reference for 'Just-in-Time' Generation of Datasets by Considering Structured Representations of Given Consent classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by 'Just-in-Time' Generation of Datasets by Considering Structured Representations of Given Consent.
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
+         <a href="#Compliant_Dataset"
+            title="https://w3id.org/consent-mapping-jit#Compliant_Dataset">Compliant Dataset</a>
       </li>
       <li>
-         <a href="#Consenting_Party"
-            title="https://w3id.org/consent-mapping-jit#Consenting_Party">Consenting Party</a>
+         <a href="#http://www.w3.org/ns/dpv#Consent" title="http://www.w3.org/ns/dpv#Consent">
+            <span>consent</span>
+         </a>
       </li>
       <li>
-         <a href="#Inclusion" title="https://w3id.org/consent-mapping-jit#Inclusion">Inlclusion</a>
+         <a href="#CSVW_Document"
+            title="https://w3id.org/consent-mapping-jit#CSVW_Document">CSVW Document</a>
       </li>
       <li>
-         <a href="#Policy" title="https://w3id.org/consent-mapping-jit#Policy">Policy</a>
+         <a href="#Dataset" title="https://w3id.org/consent-mapping-jit#Dataset">Dataset</a>
       </li>
       <li>
-         <a href="#Purpose" title="https://w3id.org/consent-mapping-jit#Purpose">Purpose</a>
+         <a href="#DSD_Document"
+            title="https://w3id.org/consent-mapping-jit#DSD_Document">DSD Document</a>
+      </li>
+      <li>
+         <a href="#Execute_Mapping"
+            title="https://w3id.org/consent-mapping-jit#Execute_Mapping">Executing Mapping</a>
+      </li>
+      <li>
+         <a href="#Filter_Dataset"
+            title="https://w3id.org/consent-mapping-jit#Filter_Dataset">Filter Dataset</a>
+      </li>
+      <li>
+         <a href="#Generate_Mapping"
+            title="https://w3id.org/consent-mapping-jit#Generate_Mapping">Generate Mapping</a>
+      </li>
+      <li>
+         <a href="#Mapping_Generator"
+            title="https://w3id.org/consent-mapping-jit#Mapping_Generator">Mapping Generator</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/dpv#Purpose" title="http://www.w3.org/ns/dpv#Purpose">
+            <span>purpose</span>
+         </a>
+      </li>
+      <li>
+         <a href="#R2RML_Mapping"
+            title="https://w3id.org/consent-mapping-jit#R2RML_Mapping">R2RML Mapping</a>
+      </li>
+      <li>
+         <a href="#R2RML_Processor"
+            title="https://w3id.org/consent-mapping-jit#R2RML_Processor">R2RML Processor</a>
+      </li>
+      <li>
+         <a href="#Validate_Dataset"
+            title="https://w3id.org/consent-mapping-jit#Validate_Dataset">Validate Dataset</a>
+      </li>
+      <li>
+         <a href="#Validation_Report"
+            title="https://w3id.org/consent-mapping-jit#Validation_Report">Validation Report</a>
+      </li>
+      <li>
+         <a href="#Validator" title="https://w3id.org/consent-mapping-jit#Validator">Validator</a>
       </li>
    </ul>
-   <div class="entity" id="Consent">
-      <h3>Consent<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="Compliant_Dataset">
+      <h3>Compliant Dataset<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Consent</p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Compliant_Dataset</p>
       <div class="comment">
-         <span class="markdown">Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a "yes" or a "no". We treat the absence of the predicate isGiven as a "no".</span>
+         <span class="markdown">Used to represent the final dataset.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -36,73 +80,32 @@ This section provides details for each class and property defined by Consent.
             <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#forInclusion" title="https://w3id.org/consent-mapping-jit#forInclusion">for inclusion</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#givenBy" title="https://w3id.org/consent-mapping-jit#givenBy">given by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isGiven" title="https://w3id.org/consent-mapping-jit#isGiven">is given</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#registeredOn"
-               title="https://w3id.org/consent-mapping-jit#registeredOn">registered on</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#validUntil" title="https://w3id.org/consent-mapping-jit#validUntil">valid until</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Consenting_Party"
-               title="https://w3id.org/consent-mapping-jit#Consenting_Party">Consenting Party</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Inclusion" title="https://w3id.org/consent-mapping-jit#Inclusion">Inlclusion</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Policy" title="https://w3id.org/consent-mapping-jit#Policy">Policy</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Purpose" title="https://w3id.org/consent-mapping-jit#Purpose">Purpose</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
       </dl>
    </div>
-   <div class="entity" id="Consenting_Party">
-      <h3>Consenting Party<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://www.w3.org/ns/dpv#Consent">
+      <h3>consent<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Consenting_Party</p>
-      <div class="comment">
-         <span class="markdown">Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization.</span>
-      </div>
+         <strong>IRI:</strong> http://www.w3.org/ns/dpv#Consent</p>
       <dl class="description">
-         <dt>is equivalent to</dt>
-         <dd>
-            <span class="dotted" title="http://www.w3.org/ns/prov#Organization">organization</span> 
-            <span class="logic">or</span> 
-            <span class="dotted" title="http://www.w3.org/ns/prov#Person">person</span>
-         </dd>
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/ns/prov#Agent">agent</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#givenBy" title="https://w3id.org/consent-mapping-jit#givenBy">given by</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Inclusion" title="https://w3id.org/consent-mapping-jit#Inclusion">Inlclusion</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Policy" title="https://w3id.org/consent-mapping-jit#Policy">Policy</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Purpose" title="https://w3id.org/consent-mapping-jit#Purpose">Purpose</a>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Inclusion">
-      <h3>Inlclusion<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="CSVW_Document">
+      <h3>CSVW Document<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Inclusion</p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#CSVW_Document</p>
       <div class="comment">
-         <span class="markdown">Inclusion represents the relation between a policy and a purpose.</span>
+         <span class="markdown">Used to represent RDF graphs containing our annotated schemas with the CSVW vocabulary.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -110,38 +113,123 @@ This section provides details for each class and property defined by Consent.
             <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#ofPolicy" title="https://w3id.org/consent-mapping-jit#ofPolicy">of policy</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#ofPurpose" title="https://w3id.org/consent-mapping-jit#ofPurpose">of purpose</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#forInclusion" title="https://w3id.org/consent-mapping-jit#forInclusion">for inclusion</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Consenting_Party"
-               title="https://w3id.org/consent-mapping-jit#Consenting_Party">Consenting Party</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Policy" title="https://w3id.org/consent-mapping-jit#Policy">Policy</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Purpose" title="https://w3id.org/consent-mapping-jit#Purpose">Purpose</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
       </dl>
    </div>
-   <div class="entity" id="Policy">
-      <h3>Policy<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="Dataset">
+      <h3>Dataset<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Policy</p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Dataset</p>
       <div class="comment">
-         <span class="markdown">Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data.</span>
+         <span class="markdown">Used to represent generated datasets</span>
       </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DSD_Document">
+      <h3>DSD Document<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#DSD_Document</p>
+      <div class="comment">
+         <span class="markdown">Used to represent RDF graphs containing our annotated Data Structure Definitions with the RDF Data Cute Vocabulary.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Execute_Mapping">
+      <h3>Executing Mapping<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Execute_Mapping</p>
+      <div class="comment">
+         <span class="markdown">Used to represent the execution of an R2RML mapping.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Activity">activity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Filter_Dataset">
+      <h3>Filter Dataset<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Filter_Dataset</p>
+      <div class="comment">
+         <span class="markdown">Used to represent filtering a generated dataset.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Activity">activity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Generate_Mapping">
+      <h3>Generate Mapping<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Generate_Mapping</p>
+      <div class="comment">
+         <span class="markdown">Used to represent the generation of an R2RML mapping.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Activity">activity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Mapping_Generator">
+      <h3>Mapping Generator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Mapping_Generator</p>
+      <div class="comment">
+         <span class="markdown">Used to represent the software generating mappings.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#SoftwareAgent">software agent</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/dpv#Purpose">
+      <h3>purpose<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/dpv#Purpose</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -150,29 +238,20 @@ This section provides details for each class and property defined by Consent.
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#ofPolicy" title="https://w3id.org/consent-mapping-jit#ofPolicy">of policy</a>
+            <a href="#hasPurpose" title="https://w3id.org/consent-mapping-jit#hasPurpose">has purpose</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Consenting_Party"
-               title="https://w3id.org/consent-mapping-jit#Consenting_Party">Consenting Party</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Inclusion" title="https://w3id.org/consent-mapping-jit#Inclusion">Inlclusion</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Purpose" title="https://w3id.org/consent-mapping-jit#Purpose">Purpose</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Purpose">
-      <h3>Purpose<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="R2RML_Mapping">
+      <h3>R2RML Mapping<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Purpose</p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#R2RML_Mapping</p>
       <div class="comment">
-         <span class="markdown">Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising.</span>
+         <span class="markdown">Used to represent an R2RML mapping.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -180,18 +259,76 @@ This section provides details for each class and property defined by Consent.
             <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in range of</dt>
+      </dl>
+   </div>
+   <div class="entity" id="R2RML_Processor">
+      <h3>R2RML Processor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#R2RML_Processor</p>
+      <div class="comment">
+         <span class="markdown">Used to represent the software for executing R2RML mappings.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#ofPurpose" title="https://w3id.org/consent-mapping-jit#ofPurpose">of purpose</a>
-            <sup class="type-op" title="object property">op</sup>
+            <span class="dotted" title="http://www.w3.org/ns/prov#SoftwareAgent">software agent</span>
+            <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is disjoint with</dt>
+      </dl>
+   </div>
+   <div class="entity" id="Validate_Dataset">
+      <h3>Validate Dataset<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Validate_Dataset</p>
+      <div class="comment">
+         <span class="markdown">Used to represent the validation of a generated and filtered dataset.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Consenting_Party"
-               title="https://w3id.org/consent-mapping-jit#Consenting_Party">Consenting Party</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Inclusion" title="https://w3id.org/consent-mapping-jit#Inclusion">Inlclusion</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Policy" title="https://w3id.org/consent-mapping-jit#Policy">Policy</a>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Activity">activity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Validation_Report">
+      <h3>Validation Report<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Validation_Report</p>
+      <div class="comment">
+         <span class="markdown">Used to represent the validation report generated and filtered datasets.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Validator">
+      <h3>Validator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#Validator</p>
+      <div class="comment">
+         <span class="markdown">Used to represent the software validating generated and filtered datasets.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/prov#SoftwareAgent">software agent</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -200,249 +337,38 @@ This section provides details for each class and property defined by Consent.
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#forInclusion" title="https://w3id.org/consent-mapping-jit#forInclusion">
-            <span>for inclusion</span>
-         </a>
-      </li>
-      <li>
-         <a href="#givenBy" title="https://w3id.org/consent-mapping-jit#givenBy">
-            <span>given by</span>
-         </a>
-      </li>
-      <li>
-         <a href="#ofPolicy" title="https://w3id.org/consent-mapping-jit#ofPolicy">
-            <span>of policy</span>
-         </a>
-      </li>
-      <li>
-         <a href="#ofPurpose" title="https://w3id.org/consent-mapping-jit#ofPurpose">
-            <span>of purpose</span>
-         </a>
+         <a href="#hasPurpose" title="https://w3id.org/consent-mapping-jit#hasPurpose">has purpose</a>
       </li>
    </ul>
-   <div class="entity" id="forInclusion">
-      <h3>for inclusion<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasPurpose">
+      <h3>has purpose<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#forInclusion</p>
+         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#hasPurpose</p>
       <div class="comment">
-         <span class="markdown">Indicates the inclusion for which consent was (not) given.</span>
+         <span class="markdown">Relating CSVW schemas or Data Structure Definitions with a Purpose.</span>
       </div>
       <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
+               <a href="#CSVW_Document"
+                  title="https://w3id.org/consent-mapping-jit#CSVW_Document">CSVW Document</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#DSD_Document"
+                  title="https://w3id.org/consent-mapping-jit#DSD_Document">DSD Document</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Inclusion" title="https://w3id.org/consent-mapping-jit#Inclusion">Inlclusion</a>
+               <a href="#http://www.w3.org/ns/dpv#Purpose" title="http://www.w3.org/ns/dpv#Purpose">purpose</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
-   </div>
-   <div class="entity" id="givenBy">
-      <h3>given by<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#givenBy</p>
-      <div class="comment">
-         <span class="markdown">Indicates who has given consent.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Consenting_Party"
-                  title="https://w3id.org/consent-mapping-jit#Consenting_Party">Consenting Party</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="ofPolicy">
-      <h3>of policy<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#ofPolicy</p>
-      <div class="comment">
-         <span class="markdown">Refers to the policy of an inclusion.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Inclusion" title="https://w3id.org/consent-mapping-jit#Inclusion">Inlclusion</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Policy" title="https://w3id.org/consent-mapping-jit#Policy">Policy</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="ofPurpose">
-      <h3>of purpose<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#ofPurpose</p>
-      <div class="comment">
-         <span class="markdown">Refers to the purpose of an inclusion.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Inclusion" title="https://w3id.org/consent-mapping-jit#Inclusion">Inlclusion</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Purpose" title="https://w3id.org/consent-mapping-jit#Purpose">Purpose</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-</div><div id="dataproperties">
-   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#isGiven" title="https://w3id.org/consent-mapping-jit#isGiven">
-            <span>is given</span>
-         </a>
-      </li>
-      <li>
-         <a href="#registeredOn"
-            title="https://w3id.org/consent-mapping-jit#registeredOn">
-            <span>registered on</span>
-         </a>
-      </li>
-      <li>
-         <a href="#validUntil" title="https://w3id.org/consent-mapping-jit#validUntil">
-            <span>valid until</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="isGiven">
-      <h3>is given<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#isGiven</p>
-      <div class="comment">
-         <span class="markdown">Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.).</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="registeredOn">
-      <h3>registered on<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#registeredOn</p>
-      <div class="comment">
-         <span class="markdown">Indicates when the consent instance was registered.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="validUntil">
-      <h3>valid until<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/consent-mapping-jit#validUntil</p>
-      <div class="comment">
-         <span class="markdown">Indicates when consent expires.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Consent" title="https://w3id.org/consent-mapping-jit#Consent">Consent</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-</div><div id="annotationproperties">
-   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#http://www.w3.org/ns/prov#value" title="http://www.w3.org/ns/prov#value">
-            <span>value</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="http://www.w3.org/ns/prov#value">
-      <h3>value<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/prov#value</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -453,4 +379,3 @@ This section provides details for each class and property defined by Consent.
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
-</html>

@@ -7,14 +7,13 @@
 @base <https://w3id.org/consent-mapping-jit#> .
 
 <https://w3id.org/consent-mapping-jit#> rdf:type owl:Ontology ;
-                                         owl:versionIRI <https://w3id.org/consent-mapping-jit/v/1.0#> ;
-                                         owl:imports <http://www.w3.org/ns/prov#> ;
+                                         owl:versionIRI <https://w3id.org/consent-mapping-jit/2.0> ;
                                          <http://purl.org/dc/elements/1.1/creator> "Christophe Debruyne" ,
                                                                                    "Harshvardhan J. Pandit" ;
-                                         <http://purl.org/dc/elements/1.1/description> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time." ;
-                                         <http://purl.org/dc/elements/1.1/title> "Consent Ontology" ;
-                                         <http://purl.org/dc/terms/abstract> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time." ;
-                                         <http://purl.org/dc/terms/created> "2018-08-24"^^xsd:date ;
+                                         <http://purl.org/dc/elements/1.1/description> "An ontology integrating and extending the Data Privacy Vocabulary v0.1 and PROV-O for the generation of datasets that take into account structured representations of given consent." ;
+                                         <http://purl.org/dc/elements/1.1/title> "'Just-in-Time' Generation of Datasets by Considering Structured Representations of Given Consent" ;
+                                         <http://purl.org/dc/terms/abstract> "An ontology integrating and extending the Data Privacy Vocabulary v0.1 and PROV-O for the generation of datasets that take into account structured representations of given consent." ;
+                                         <http://purl.org/dc/terms/created> "2018-08-24" ;
                                          <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"^^<https://w3.org/2001/XMLSchema#anyURI> ;
                                          <http://purl.org/dc/terms/publisher> <http://purl.org/adaptcentre/people/ADAPT> ;
                                          <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> .
@@ -31,73 +30,35 @@
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/consent-mapping-jit#forInclusion
-:forInclusion rdf:type owl:ObjectProperty ,
-                       owl:FunctionalProperty ;
-              rdfs:domain :Consent ;
-              rdfs:range :Inclusion ;
-              rdfs:comment "Indicates the inclusion for which consent was (not) given." ,
-                           "for inclusion" .
-
-
-###  https://w3id.org/consent-mapping-jit#givenBy
-:givenBy rdf:type owl:ObjectProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :Consent ;
-         rdfs:range :Consenting_Party ;
-         rdfs:comment "Indicates who has given consent." ,
-                      "given by" .
-
-
-###  https://w3id.org/consent-mapping-jit#ofPolicy
-:ofPolicy rdf:type owl:ObjectProperty ,
-                   owl:FunctionalProperty ;
-          rdfs:domain :Inclusion ;
-          rdfs:range :Policy ;
-          rdfs:comment "Refers to the policy of an inclusion." ,
-                       "of policy" .
-
-
-###  https://w3id.org/consent-mapping-jit#ofPurpose
-:ofPurpose rdf:type owl:ObjectProperty ,
-                    owl:FunctionalProperty ;
-           rdfs:domain :Inclusion ;
-           rdfs:range :Purpose ;
-           rdfs:comment "Refers to the purpose of an inclusion." ,
-                        "of purpose" .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  https://w3id.org/consent-mapping-jit#isGiven
-:isGiven rdf:type owl:DatatypeProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :Consent ;
-         rdfs:range xsd:boolean ;
-         rdfs:comment "Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.)." .
-
-
-###  https://w3id.org/consent-mapping-jit#registeredOn
-:registeredOn rdf:type owl:DatatypeProperty ,
-                       owl:FunctionalProperty ;
-              rdfs:domain :Consent ;
-              rdfs:range xsd:dateTime ;
-              rdfs:comment "Indicates when the consent instance was registered." .
-
-
-###  https://w3id.org/consent-mapping-jit#validUntil
-:validUntil rdf:type owl:DatatypeProperty ,
-                     owl:FunctionalProperty ;
-            rdfs:domain :Consent ;
-            rdfs:range xsd:dateTime ;
-            rdfs:comment "Indicates when consent expires." .
+###  https://w3id.org/consent-mapping-jit#hasPurpose
+:hasPurpose rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :CSVW_Document
+                                        :DSD_Document
+                                      )
+                        ] ;
+            rdfs:range <http://www.w3.org/ns/dpv#Purpose> ;
+            rdfs:comment "Relating CSVW schemas or Data Structure Definitions with a Purpose." ;
+            rdfs:label "has purpose" .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.w3.org/ns/dpv#Consent
+<http://www.w3.org/ns/dpv#Consent> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+
+
+###  http://www.w3.org/ns/dpv#Purpose
+<http://www.w3.org/ns/dpv#Purpose> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
 
 ###  http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
@@ -107,58 +68,99 @@
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
 
 
-###  https://w3id.org/consent-mapping-jit#Consent
-:Consent rdf:type owl:Class ;
+###  http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> rdf:type owl:Class .
+
+
+###  https://w3id.org/consent-mapping-jit#CSVW_Document
+:CSVW_Document rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+               rdfs:comment "Used to represent RDF graphs containing our annotated schemas with the CSVW vocabulary." ;
+               rdfs:label "CSVW Document" .
+
+
+###  https://w3id.org/consent-mapping-jit#Compliant_Dataset
+:Compliant_Dataset rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                   rdfs:comment "Used to represent the final dataset." ;
+                   rdfs:label "Compliant Dataset" .
+
+
+###  https://w3id.org/consent-mapping-jit#DSD_Document
+:DSD_Document rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+              rdfs:comment "Used to represent RDF graphs containing our annotated Data Structure Definitions with the RDF Data Cute Vocabulary." ;
+              rdfs:label "DSD Document" .
+
+
+###  https://w3id.org/consent-mapping-jit#Dataset
+:Dataset rdf:type owl:Class ;
          rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-         rdfs:comment "Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a \"yes\" or a \"no\". We treat the absence of the predicate isGiven as a \"no\"." ;
-         rdfs:label "Consent" .
+         rdfs:comment "Used to represent generated datasets" ;
+         rdfs:label "Dataset" .
 
 
-###  https://w3id.org/consent-mapping-jit#Consenting_Party
-:Consenting_Party rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Class ;
-                                        owl:unionOf ( <http://www.w3.org/ns/prov#Organization>
-                                                      <http://www.w3.org/ns/prov#Person>
-                                                    )
-                                      ] ;
-                  rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
-                  rdfs:comment "Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization." ;
-                  rdfs:label "Consenting Party" .
+###  https://w3id.org/consent-mapping-jit#Execute_Mapping
+:Execute_Mapping rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                 rdfs:comment "Used to represent the execution of an R2RML mapping." ;
+                 rdfs:label "Executing Mapping" .
 
 
-###  https://w3id.org/consent-mapping-jit#Inclusion
-:Inclusion rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-           rdfs:comment "Inclusion represents the relation between a policy and a purpose." ;
-           rdfs:label "Inlclusion" .
+###  https://w3id.org/consent-mapping-jit#Filter_Dataset
+:Filter_Dataset rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                rdfs:comment "Used to represent filtering a generated dataset." ;
+                rdfs:label "Filter Dataset" .
 
 
-###  https://w3id.org/consent-mapping-jit#Policy
-:Policy rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-        rdfs:comment "Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data." ;
-        rdfs:label "Policy" .
+###  https://w3id.org/consent-mapping-jit#Generate_Mapping
+:Generate_Mapping rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                  rdfs:comment "Used to represent the generation of an R2RML mapping." ;
+                  rdfs:label "Generate Mapping" .
 
 
-###  https://w3id.org/consent-mapping-jit#Purpose
-:Purpose rdf:type owl:Class ;
-         rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-         rdfs:comment "Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising." ;
-         rdfs:label "Purpose" .
+###  https://w3id.org/consent-mapping-jit#Mapping_Generator
+:Mapping_Generator rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> ;
+                   rdfs:comment "Used to represent the software generating mappings." ;
+                   rdfs:label "Mapping Generator" .
 
 
-#################################################################
-#    General axioms
-#################################################################
+###  https://w3id.org/consent-mapping-jit#R2RML_Mapping
+:R2RML_Mapping rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+               rdfs:comment "Used to represent an R2RML mapping." ;
+               rdfs:label "R2RML Mapping" .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Consent
-                :Consenting_Party
-                :Inclusion
-                :Policy
-                :Purpose
-              )
-] .
+
+###  https://w3id.org/consent-mapping-jit#R2RML_Processor
+:R2RML_Processor rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> ;
+                 rdfs:comment "Used to represent the software for executing R2RML mappings." ;
+                 rdfs:label "R2RML Processor" .
+
+
+###  https://w3id.org/consent-mapping-jit#Validate_Dataset
+:Validate_Dataset rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                  rdfs:comment "Used to represent the validation of a generated and filtered dataset." ;
+                  rdfs:label "Validate Dataset" .
+
+
+###  https://w3id.org/consent-mapping-jit#Validation_Report
+:Validation_Report rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                   rdfs:comment "Used to represent the validation report generated and filtered datasets." ;
+                   rdfs:label "Validation Report" .
+
+
+###  https://w3id.org/consent-mapping-jit#Validator
+:Validator rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> ;
+           rdfs:comment "Used to represent the software validating generated and filtered datasets." ;
+           rdfs:label "Validator" .
 
 
 ###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

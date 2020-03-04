@@ -1,12 +1,11 @@
 <https://w3id.org/consent-mapping-jit#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/consent-mapping-jit#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/consent-mapping-jit/v/1.0#> .
-<https://w3id.org/consent-mapping-jit#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov#> .
+<https://w3id.org/consent-mapping-jit#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/consent-mapping-jit/2.0> .
 <https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/elements/1.1/creator> "Christophe Debruyne" .
 <https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/elements/1.1/creator> "Harshvardhan J. Pandit" .
-<https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/elements/1.1/description> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time." .
-<https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/elements/1.1/title> "Consent Ontology" .
-<https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/terms/abstract> "An ontology for representing consent information that has been stored by an organization in terms of policies, purposes, inclusions (a concept for the relation between policies and purposes), consenting parties and consent. It extends PROV-O as policies, purposes, inclusions and consent are instances of prov:Entity, allowing us to model changes over time." .
-<https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/terms/created> "2018-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/elements/1.1/description> "An ontology integrating and extending the Data Privacy Vocabulary v0.1 and PROV-O for the generation of datasets that take into account structured representations of given consent." .
+<https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/elements/1.1/title> "'Just-in-Time' Generation of Datasets by Considering Structured Representations of Given Consent" .
+<https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/terms/abstract> "An ontology integrating and extending the Data Privacy Vocabulary v0.1 and PROV-O for the generation of datasets that take into account structured representations of given consent." .
+<https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/terms/created> "2018-08-24" .
 <https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"^^<https://w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/consent-mapping-jit#> <http://purl.org/dc/terms/publisher> <http://purl.org/adaptcentre/people/ADAPT> .
 <https://w3id.org/consent-mapping-jit#> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> .
@@ -31,67 +30,20 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/consent-mapping-jit#forInclusion
-<https://w3id.org/consent-mapping-jit#forInclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/consent-mapping-jit#forInclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/consent-mapping-jit#forInclusion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/consent-mapping-jit#Consent> .
-<https://w3id.org/consent-mapping-jit#forInclusion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/consent-mapping-jit#Inclusion> .
-<https://w3id.org/consent-mapping-jit#forInclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the inclusion for which consent was (not) given." .
-<https://w3id.org/consent-mapping-jit#forInclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "for inclusion" .
-# 
-# https://w3id.org/consent-mapping-jit#givenBy
-<https://w3id.org/consent-mapping-jit#givenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/consent-mapping-jit#givenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/consent-mapping-jit#givenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/consent-mapping-jit#Consent> .
-<https://w3id.org/consent-mapping-jit#givenBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/consent-mapping-jit#Consenting_Party> .
-<https://w3id.org/consent-mapping-jit#givenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates who has given consent." .
-<https://w3id.org/consent-mapping-jit#givenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "given by" .
-# 
-# https://w3id.org/consent-mapping-jit#ofPolicy
-<https://w3id.org/consent-mapping-jit#ofPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/consent-mapping-jit#ofPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/consent-mapping-jit#ofPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/consent-mapping-jit#Inclusion> .
-<https://w3id.org/consent-mapping-jit#ofPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/consent-mapping-jit#Policy> .
-<https://w3id.org/consent-mapping-jit#ofPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the policy of an inclusion." .
-<https://w3id.org/consent-mapping-jit#ofPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "of policy" .
-# 
-# https://w3id.org/consent-mapping-jit#ofPurpose
-<https://w3id.org/consent-mapping-jit#ofPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/consent-mapping-jit#ofPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/consent-mapping-jit#ofPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/consent-mapping-jit#Inclusion> .
-<https://w3id.org/consent-mapping-jit#ofPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/consent-mapping-jit#Purpose> .
-<https://w3id.org/consent-mapping-jit#ofPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the purpose of an inclusion." .
-<https://w3id.org/consent-mapping-jit#ofPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "of purpose" .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# https://w3id.org/consent-mapping-jit#isGiven
-<https://w3id.org/consent-mapping-jit#isGiven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/consent-mapping-jit#isGiven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/consent-mapping-jit#isGiven> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/consent-mapping-jit#Consent> .
-<https://w3id.org/consent-mapping-jit#isGiven> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://w3id.org/consent-mapping-jit#isGiven> <http://www.w3.org/2000/01/rdf-schema#comment> "Captures whether the consent is given. True means that consent was given, and false means that the consent is not given (rejected, withdrawn, etc.)." .
-# 
-# https://w3id.org/consent-mapping-jit#registeredOn
-<https://w3id.org/consent-mapping-jit#registeredOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/consent-mapping-jit#registeredOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/consent-mapping-jit#registeredOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/consent-mapping-jit#Consent> .
-<https://w3id.org/consent-mapping-jit#registeredOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/consent-mapping-jit#registeredOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates when the consent instance was registered." .
-# 
-# https://w3id.org/consent-mapping-jit#validUntil
-<https://w3id.org/consent-mapping-jit#validUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/consent-mapping-jit#validUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/consent-mapping-jit#validUntil> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/consent-mapping-jit#Consent> .
-<https://w3id.org/consent-mapping-jit#validUntil> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/consent-mapping-jit#validUntil> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates when consent expires." .
+# https://w3id.org/consent-mapping-jit#hasPurpose
+<https://w3id.org/consent-mapping-jit#hasPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/consent-mapping-jit#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/consent-mapping-jit#CSVW_Document> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/consent-mapping-jit#DSD_Document> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/consent-mapping-jit#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dpv#Purpose> .
+<https://w3id.org/consent-mapping-jit#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Relating CSVW schemas or Data Structure Definitions with a Purpose." .
+<https://w3id.org/consent-mapping-jit#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "has purpose" .
 # 
 # 
 # 
@@ -102,76 +54,102 @@
 # #################################################################
 # 
 # 
+# http://www.w3.org/ns/dpv#Consent
+<http://www.w3.org/ns/dpv#Consent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dpv#Consent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+# 
+# http://www.w3.org/ns/dpv#Purpose
+<http://www.w3.org/ns/dpv#Purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dpv#Purpose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/consent-mapping-jit#Consent
-<https://w3id.org/consent-mapping-jit#Consent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/consent-mapping-jit#Consent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
-<https://w3id.org/consent-mapping-jit#Consent> <http://www.w3.org/2000/01/rdf-schema#comment> "Consent represents the result of a consenting party reacting to a consent request (which may be requested by means of a form). As a consent needs to be informed and explicit, we ideally capture the consent as a \"yes\" or a \"no\". We treat the absence of the predicate isGiven as a \"no\"." .
-<https://w3id.org/consent-mapping-jit#Consent> <http://www.w3.org/2000/01/rdf-schema#label> "Consent" .
+# http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/consent-mapping-jit#Consenting_Party
-<https://w3id.org/consent-mapping-jit#Consenting_Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/consent-mapping-jit#Consenting_Party> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Organization> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Person> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/consent-mapping-jit#Consenting_Party> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/consent-mapping-jit#Consenting_Party> <http://www.w3.org/2000/01/rdf-schema#comment> "Consenting Party is used to represent a person, or an agent acting on behalf of someone giving their consent for the purposes that are included in a policy. It is equivalent with the concept-union of prov:Person and prof:Organization." .
-<https://w3id.org/consent-mapping-jit#Consenting_Party> <http://www.w3.org/2000/01/rdf-schema#label> "Consenting Party" .
+# https://w3id.org/consent-mapping-jit#CSVW_Document
+<https://w3id.org/consent-mapping-jit#CSVW_Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#CSVW_Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/consent-mapping-jit#CSVW_Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent RDF graphs containing our annotated schemas with the CSVW vocabulary." .
+<https://w3id.org/consent-mapping-jit#CSVW_Document> <http://www.w3.org/2000/01/rdf-schema#label> "CSVW Document" .
 # 
-# https://w3id.org/consent-mapping-jit#Inclusion
-<https://w3id.org/consent-mapping-jit#Inclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/consent-mapping-jit#Inclusion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
-<https://w3id.org/consent-mapping-jit#Inclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "Inclusion represents the relation between a policy and a purpose." .
-<https://w3id.org/consent-mapping-jit#Inclusion> <http://www.w3.org/2000/01/rdf-schema#label> "Inlclusion" .
+# https://w3id.org/consent-mapping-jit#Compliant_Dataset
+<https://w3id.org/consent-mapping-jit#Compliant_Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Compliant_Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/consent-mapping-jit#Compliant_Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent the final dataset." .
+<https://w3id.org/consent-mapping-jit#Compliant_Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Compliant Dataset" .
 # 
-# https://w3id.org/consent-mapping-jit#Policy
-<https://w3id.org/consent-mapping-jit#Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/consent-mapping-jit#Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
-<https://w3id.org/consent-mapping-jit#Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "Policy is an abstract concept for representing things such as Terms and Conditions, Data Privacy Policies, etc. All of which encompass various notions of user rights, user obligations and what a service intends to do with the data." .
-<https://w3id.org/consent-mapping-jit#Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Policy" .
+# https://w3id.org/consent-mapping-jit#DSD_Document
+<https://w3id.org/consent-mapping-jit#DSD_Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#DSD_Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/consent-mapping-jit#DSD_Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent RDF graphs containing our annotated Data Structure Definitions with the RDF Data Cute Vocabulary." .
+<https://w3id.org/consent-mapping-jit#DSD_Document> <http://www.w3.org/2000/01/rdf-schema#label> "DSD Document" .
 # 
-# https://w3id.org/consent-mapping-jit#Purpose
-<https://w3id.org/consent-mapping-jit#Purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/consent-mapping-jit#Purpose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
-<https://w3id.org/consent-mapping-jit#Purpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Purpose is a concept for representing the purpose of using (personal) data. This may range from using email addresses to send a newsletter to using one’s profile and purchase history for targeted advertising." .
-<https://w3id.org/consent-mapping-jit#Purpose> <http://www.w3.org/2000/01/rdf-schema#label> "Purpose" .
+# https://w3id.org/consent-mapping-jit#Dataset
+<https://w3id.org/consent-mapping-jit#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/consent-mapping-jit#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent generated datasets" .
+<https://w3id.org/consent-mapping-jit#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset" .
 # 
+# https://w3id.org/consent-mapping-jit#Execute_Mapping
+<https://w3id.org/consent-mapping-jit#Execute_Mapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Execute_Mapping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/consent-mapping-jit#Execute_Mapping> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent the execution of an R2RML mapping." .
+<https://w3id.org/consent-mapping-jit#Execute_Mapping> <http://www.w3.org/2000/01/rdf-schema#label> "Executing Mapping" .
 # 
+# https://w3id.org/consent-mapping-jit#Filter_Dataset
+<https://w3id.org/consent-mapping-jit#Filter_Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Filter_Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/consent-mapping-jit#Filter_Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent filtering a generated dataset." .
+<https://w3id.org/consent-mapping-jit#Filter_Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Filter Dataset" .
 # 
-# #################################################################
-# #
-# #    General axioms
-# #
-# #################################################################
+# https://w3id.org/consent-mapping-jit#Generate_Mapping
+<https://w3id.org/consent-mapping-jit#Generate_Mapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Generate_Mapping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/consent-mapping-jit#Generate_Mapping> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent the generation of an R2RML mapping." .
+<https://w3id.org/consent-mapping-jit#Generate_Mapping> <http://www.w3.org/2000/01/rdf-schema#label> "Generate Mapping" .
 # 
+# https://w3id.org/consent-mapping-jit#Mapping_Generator
+<https://w3id.org/consent-mapping-jit#Mapping_Generator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Mapping_Generator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<https://w3id.org/consent-mapping-jit#Mapping_Generator> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent the software generating mappings." .
+<https://w3id.org/consent-mapping-jit#Mapping_Generator> <http://www.w3.org/2000/01/rdf-schema#label> "Mapping Generator" .
 # 
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid4 <http://www.w3.org/2002/07/owl#members> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/consent-mapping-jit#Consent> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/consent-mapping-jit#Consenting_Party> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/consent-mapping-jit#Inclusion> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/consent-mapping-jit#Policy> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/consent-mapping-jit#Purpose> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# https://w3id.org/consent-mapping-jit#R2RML_Mapping
+<https://w3id.org/consent-mapping-jit#R2RML_Mapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#R2RML_Mapping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/consent-mapping-jit#R2RML_Mapping> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent an R2RML mapping." .
+<https://w3id.org/consent-mapping-jit#R2RML_Mapping> <http://www.w3.org/2000/01/rdf-schema#label> "R2RML Mapping" .
+# 
+# https://w3id.org/consent-mapping-jit#R2RML_Processor
+<https://w3id.org/consent-mapping-jit#R2RML_Processor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#R2RML_Processor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<https://w3id.org/consent-mapping-jit#R2RML_Processor> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent the software for executing R2RML mappings." .
+<https://w3id.org/consent-mapping-jit#R2RML_Processor> <http://www.w3.org/2000/01/rdf-schema#label> "R2RML Processor" .
+# 
+# https://w3id.org/consent-mapping-jit#Validate_Dataset
+<https://w3id.org/consent-mapping-jit#Validate_Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Validate_Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/consent-mapping-jit#Validate_Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent the validation of a generated and filtered dataset." .
+<https://w3id.org/consent-mapping-jit#Validate_Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Validate Dataset" .
+# 
+# https://w3id.org/consent-mapping-jit#Validation_Report
+<https://w3id.org/consent-mapping-jit#Validation_Report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Validation_Report> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/consent-mapping-jit#Validation_Report> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent the validation report generated and filtered datasets." .
+<https://w3id.org/consent-mapping-jit#Validation_Report> <http://www.w3.org/2000/01/rdf-schema#label> "Validation Report" .
+# 
+# https://w3id.org/consent-mapping-jit#Validator
+<https://w3id.org/consent-mapping-jit#Validator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/consent-mapping-jit#Validator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<https://w3id.org/consent-mapping-jit#Validator> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to represent the software validating generated and filtered datasets." .
+<https://w3id.org/consent-mapping-jit#Validator> <http://www.w3.org/2000/01/rdf-schema#label> "Validator" .
 # 
 # Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
